@@ -1,0 +1,9 @@
+body{font-family:system-ui;margin:0;background:#f4f4f4}
+header{position:sticky;top:0;background:#fff;padding:14px;border-bottom:1px solid #ddd}
+.container{max-width:700px;margin:auto;padding:12px}
+.card{background:#fff;border-radius:14px;padding:14px;margin:12px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.option{border:1px solid #ccc;border-radius:10px;padding:10px;margin:8px 0;cursor:pointer}
+.correct{background:#dff4df;border-color:#2e9f45}
+.wrong{background:#fde0e0;border-color:#c73737}
+.hidden{display:none}
+button{padding:8px 12px;border-radius:8px;border:1px solid #ccc;background:#fff}
