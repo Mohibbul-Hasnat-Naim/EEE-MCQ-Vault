@@ -639,46 +639,41 @@ function getBookmarkCount(){
 
 function addBookmarkDashboardCard(){
 
-    const dashboard = document.getElementById("dashboard");
+    const totalCard = document.getElementById("totalQuestions");
 
-    if(!dashboard) return;
+    if(!totalCard) return;
 
+    // Find the existing total-question card
+    const existingCard = totalCard.closest(".stat-card, .total-card, .stats-card");
+
+    if(!existingCard) return;
+
+    // Prevent duplicate bookmark card
     if(document.getElementById("bookmarkPracticeCard")) return;
 
-    const stats = document.createElement("div");
+    const bookmarkCard = document.createElement("button");
 
-    stats.className = "dashboard-stats";
+    bookmarkCard.className = existingCard.className;
+    bookmarkCard.id = "bookmarkPracticeCard";
 
-    stats.innerHTML = `
-        <div class="stat-card">
-            <span class="stat-number" id="totalQuestions">
-                0
-            </span>
-            <span class="stat-label">
-                Total Questions
-            </span>
-        </div>
+    bookmarkCard.innerHTML = `
+        <span class="stat-number" id="bookmarkCount">
+            ${getBookmarkCount()}
+        </span>
 
-        <button
-            class="stat-card bookmark-stat"
-            id="bookmarkPracticeCard">
-
-            <span class="stat-number" id="bookmarkCount">
-                ${getBookmarkCount()}
-            </span>
-
-            <span class="stat-label">
-                ★ Bookmarked
-            </span>
-
-        </button>
+        <span class="stat-label">
+            ★ Bookmarked
+        </span>
     `;
 
-    dashboard.insertBefore(
-        stats,
-        dashboard.firstChild
+    // Put the bookmark card beside the existing total card
+    existingCard.parentNode.insertBefore(
+        bookmarkCard,
+        existingCard.nextSibling
     );
 
+    // Make the two cards sit beside each other
+    existingCard.parentNode.classList.add("dashboard-stats");
 }
 
 
