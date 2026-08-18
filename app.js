@@ -1,5 +1,8 @@
-// ===== Global State =====
+// ======================================================
+// BUILD 004A
+// ======================================================
 
+// ===== Global State =====
 let currentSession = [];
 
 
@@ -10,7 +13,7 @@ document.addEventListener("DOMContentLoaded", init);
 async function init() {
 
     await buildDashboard();
-
+    addBookmarkDashboardCard();
 }
 
 
@@ -124,6 +127,9 @@ function shuffle(array) {
 
 }
 
+// ======================================================
+// BUILD 004B
+// ======================================================
 
 // ===== Event Listeners =====
 
@@ -232,6 +238,8 @@ function startSession(topicName, subtopicName, questions) {
     document.getElementById("dashboard").classList.add("hidden");
     document.getElementById("practiceScreen").classList.remove("hidden");
 
+    enterPracticeHistory();
+
     renderPracticeHeader(topicName, subtopicName);
     renderQuestions();
 
@@ -240,27 +248,78 @@ function startSession(topicName, subtopicName, questions) {
 
 // ===== Header =====
 
-function renderPracticeHeader(topic, subtopic) {
+// function renderPracticeHeader(topic, subtopic) {
+
+//     const header = document.getElementById("practiceHeader");
+
+//     header.innerHTML = `
+//         <div class="practice-top">
+
+//             <button id="backDashboard">←</button>
+
+//             <div class="practice-title">
+//                 <strong>${topic}</strong>
+//                 <span>${subtopic}</span>
+//             </div>
+
+//             <button id="restartPractice">↻</button>
+
+//         </div>
+
+//         <div class="progress-info">
+
+//             <span id="progressText">0 / ${currentSession.length}</span>
+
+//         </div>
+
+//         <div class="progress-bar">
+//             <div id="progressFill"></div>
+//         </div>
+//     `;
+
+// }
+
+function renderPracticeHeader(topic, subtopic){
 
     const header = document.getElementById("practiceHeader");
 
     header.innerHTML = `
+
         <div class="practice-top">
 
-            <button id="backDashboard">←</button>
+            <button id="backDashboard">
+                ←
+            </button>
 
             <div class="practice-title">
-                <strong>${topic}</strong>
-                <span>${subtopic}</span>
+                <strong>${subtopic}</strong>
+                <span>${topic}</span>
             </div>
 
-            <button id="restartPractice">↻</button>
+            <button id="restartPractice">
+                ↻
+            </button>
 
         </div>
 
-        <div class="progress-info">
+        <div class="session-stats">
 
-            <span id="progressText">0 / ${currentSession.length}</span>
+            <div class="session-stat correct-stat">
+                <strong id="correctCount">0</strong>
+                <span>Correct</span>
+            </div>
+
+            <div class="session-stat wrong-stat">
+                <strong id="wrongCount">0</strong>
+                <span>Wrong</span>
+            </div>
+
+            <div class="session-stat progress-stat">
+                <strong id="progressText">
+                    0 / ${currentSession.length}
+                </strong>
+                <span>Done</span>
+            </div>
 
         </div>
 
@@ -270,7 +329,6 @@ function renderPracticeHeader(topic, subtopic) {
     `;
 
 }
-
 
 // ===== Render Questions =====
 
@@ -395,22 +453,66 @@ function toggleBookmark(id, element) {
 
 // ---------- Progress ----------
 
-function updateProgress() {
+// function updateProgress() {
 
-    const answered = document.querySelectorAll(
-        '.question-card[data-answered="true"]'
-    ).length;
+//     const answered = document.querySelectorAll(
+//         '.question-card[data-answered="true"]'
+//     ).length;
+
+//     const total = currentSession.length;
+
+//     document.getElementById("progressText").textContent =
+//         `${answered} / ${total}`;
+
+//     document.getElementById("progressFill").style.width =
+//         `${answered / total * 100}%`;
+
+// }
+
+function updateProgress(){
+
+    const cards =
+        document.querySelectorAll(".question-card");
+
+    let answered = 0;
+    let correct = 0;
+    let wrong = 0;
+
+    cards.forEach(card => {
+
+        if(card.dataset.answered === "true"){
+
+            answered++;
+
+            if(card.classList.contains("answered-correct")){
+
+                correct++;
+
+            }else{
+
+                wrong++;
+
+            }
+
+        }
+
+    });
 
     const total = currentSession.length;
 
     document.getElementById("progressText").textContent =
         `${answered} / ${total}`;
 
+    document.getElementById("correctCount").textContent =
+        correct;
+
+    document.getElementById("wrongCount").textContent =
+        wrong;
+
     document.getElementById("progressFill").style.width =
         `${answered / total * 100}%`;
 
 }
-
 
 // ---------- Global Click Engine ----------
 
@@ -515,6 +617,207 @@ document.addEventListener("click", function (e) {
         });
 
         return;
+
+    }
+
+});
+
+
+// ======================================================
+// BUILD 006A
+// Dashboard Stats + Bookmarked Practice
+// ======================================================
+
+function getBookmarkCount(){
+
+    return getBookmarks().length;
+
+}
+
+
+// ---------- Dashboard Bookmark Card ----------
+
+function addBookmarkDashboardCard(){
+
+    const dashboard = document.getElementById("dashboard");
+
+    if(!dashboard) return;
+
+    if(document.getElementById("bookmarkPracticeCard")) return;
+
+    const stats = document.createElement("div");
+
+    stats.className = "dashboard-stats";
+
+    stats.innerHTML = `
+        <div class="stat-card">
+            <span class="stat-number" id="totalQuestions">
+                0
+            </span>
+            <span class="stat-label">
+                Total Questions
+            </span>
+        </div>
+
+        <button
+            class="stat-card bookmark-stat"
+            id="bookmarkPracticeCard">
+
+            <span class="stat-number" id="bookmarkCount">
+                ${getBookmarkCount()}
+            </span>
+
+            <span class="stat-label">
+                ★ Bookmarked
+            </span>
+
+        </button>
+    `;
+
+    dashboard.insertBefore(
+        stats,
+        dashboard.firstChild
+    );
+
+}
+
+
+// ---------- Start Bookmarked Practice ----------
+
+async function startBookmarkedPractice(){
+
+    const bookmarkedIds = getBookmarks();
+
+    if(bookmarkedIds.length === 0) return;
+
+    let questions = [];
+
+    for(const topic of MCQ_CONFIG.topics){
+
+        for(const sub of topic.subtopics){
+
+            try{
+
+                const data = await loadQuestionFile(
+                    topic.folder,
+                    sub.file
+                );
+
+                data.forEach(question => {
+
+                    if(bookmarkedIds.includes(question.id)){
+
+                        questions.push(question);
+
+                    }
+
+                });
+
+            }catch(err){
+
+                // Ignore question files that don't exist yet
+
+            }
+
+        }
+
+    }
+
+    if(questions.length === 0) return;
+
+    startSession(
+        "EEE MCQ Vault",
+        "Bookmarked Questions",
+        questions
+    );
+
+}
+
+
+// ---------- Bookmark Dashboard Click ----------
+
+document.addEventListener("click", function(e){
+
+    if(e.target.closest("#bookmarkPracticeCard")){
+
+        startBookmarkedPractice();
+
+    }
+
+});
+
+
+// ---------- Refresh Bookmark Counter ----------
+
+function refreshBookmarkCount(){
+
+    const counter =
+        document.getElementById("bookmarkCount");
+
+    if(counter){
+
+        counter.textContent = getBookmarkCount();
+
+    }
+
+}
+
+
+// ---------- Override Bookmark Toggle ----------
+
+const originalToggleBookmark = toggleBookmark;
+
+toggleBookmark = function(id, element){
+
+    originalToggleBookmark(id, element);
+
+    refreshBookmarkCount();
+
+};
+
+// ======================================================
+// BUILD 006D
+// Browser / Phone Back Navigation
+// ======================================================
+
+let practiceHistoryActive = false;
+
+
+// ---------- Enter Practice History ----------
+
+function enterPracticeHistory(){
+
+    if(practiceHistoryActive) return;
+
+    history.pushState(
+        { practice: true },
+        "",
+        "#practice"
+    );
+
+    practiceHistoryActive = true;
+
+}
+
+
+// ---------- Browser / Phone Back ----------
+
+window.addEventListener("popstate", function(){
+
+    if(practiceHistoryActive){
+
+        practiceHistoryActive = false;
+
+        document.getElementById("practiceScreen")
+            .classList.add("hidden");
+
+        document.getElementById("dashboard")
+            .classList.remove("hidden");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
     }
 

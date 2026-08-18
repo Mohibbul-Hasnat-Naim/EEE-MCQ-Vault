@@ -339,3 +339,159 @@ summary{
     margin-top:10px;
     color:var(--muted);
 }
+
+/* =====================================================
+   BUILD 006E
+   Compact Mobile Practice UI
+   ===================================================== */
+
+.dashboard-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-bottom:16px;
+}
+
+.stat-card{
+    border:1px solid var(--border);
+    background:var(--surface);
+    border-radius:12px;
+    padding:10px;
+    text-align:center;
+}
+
+button.stat-card{
+    color:var(--text);
+    width:100%;
+    cursor:pointer;
+}
+
+.stat-number{
+    display:block;
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+.stat-label{
+    display:block;
+    margin-top:2px;
+    color:var(--muted);
+    font-size:.75rem;
+}
+
+
+/* ---------- Practice Header ---------- */
+
+.practice-top{
+    padding:6px 0;
+}
+
+.practice-top button{
+    padding:7px 10px;
+    border-radius:9px;
+}
+
+.practice-title{
+    line-height:1.1;
+}
+
+.practice-title strong{
+    font-size:.9rem;
+}
+
+.practice-title span{
+    font-size:.7rem;
+}
+
+
+/* ---------- Session Counters ---------- */
+
+.session-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:6px;
+    margin:6px 0;
+}
+
+.session-stat{
+    text-align:center;
+    padding:4px 2px;
+}
+
+.session-stat strong{
+    display:block;
+    font-size:.9rem;
+    line-height:1;
+}
+
+.session-stat span{
+    display:block;
+    margin-top:2px;
+    color:var(--muted);
+    font-size:.65rem;
+}
+
+.progress-bar{
+    height:5px;
+    margin-top:4px;
+}
+
+
+/* ---------- Compact Question Card ---------- */
+
+.question-card{
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:14px;
+}
+
+.question-top{
+    margin-bottom:7px;
+}
+
+.question-id{
+    font-size:.7rem;
+}
+
+.bookmark{
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.question-text{
+    line-height:1.4;
+    margin-bottom:9px;
+}
+
+.option{
+    padding:9px 10px;
+    margin-bottom:5px;
+    border-radius:9px;
+}
+
+.question-card details{
+    margin-top:7px;
+    font-size:.82rem;
+}
+
+.question-card details summary{
+    cursor:pointer;
+}
+
+
+/* ---------- Answered Indicators ---------- */
+
+.question-card.answered-correct{
+    border-left:4px solid var(--success);
+}
+
+.question-card.answered-wrong{
+    border-left:4px solid var(--danger);
+}
+
+
+/* ---------- Bookmark ---------- */
+
+.bookmark.active{
+    color:#FACC15;
+}
