@@ -1,4 +1,0 @@
-[
-{"id":"ET-BJ-001","subject":"Electronics","subtopic":"BJT","difficulty":"Easy","question":"Which region of a BJT is heavily doped?","options":{"A":"Collector","B":"Base","C":"Emitter","D":"Substrate"},"correct":"C","hint":"Carrier injection","explanation":"Emitter is heavily doped.","verified":true},
-{"id":"ET-BJ-002","subject":"Electronics","subtopic":"BJT","difficulty":"Easy","question":"In active mode the base-emitter junction is:","options":{"A":"Forward biased","B":"Reverse biased","C":"Open","D":"Shorted"},"correct":"A","hint":"Carrier injection","explanation":"BE forward, CB reverse.","verified":true}
-]

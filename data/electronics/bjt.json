@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ET-BJT-001",
+    "question": "Which region of a BJT is used for amplification?",
+    "options": [
+      "Cut-off",
+      "Active",
+      "Saturation",
+      "Breakdown"
+    ],
+    "answer": 1,
+    "explanation": "A BJT amplifies signals when operating in the active region.",
+    "image": null
+  },
+  {
+    "id": "ET-BJT-002",
+    "question": "In an NPN transistor, the emitter is heavily ______.",
+    "options": [
+      "Insulated",
+      "Doped",
+      "Grounded",
+      "Biased"
+    ],
+    "answer": 1,
+    "explanation": "The emitter is heavily doped to inject a large number of charge carriers.",
+    "image": null
+  },
+  {
+    "id": "ET-BJT-003",
+    "question": "Which current is equal to the sum of base current and collector current?",
+    "options": [
+      "Emitter current",
+      "Collector current",
+      "Base current",
+      "Leakage current"
+    ],
+    "answer": 0,
+    "explanation": "Emitter current equals collector current plus base current.",
+    "image": null
+  },
+  {
+    "id": "ET-BJT-004",
+    "question": "The current gain β of a BJT is defined as:",
+    "options": [
+      "Ic / Ib",
+      "Ib / Ic",
+      "Ie / Ic",
+      "Ic / Ie"
+    ],
+    "answer": 0,
+    "explanation": "Beta (β) is the ratio of collector current to base current.",
+    "image": null
+  },
+  {
+    "id": "ET-BJT-005",
+    "question": "In saturation, both junctions of a BJT are:",
+    "options": [
+      "Reverse biased",
+      "Forward biased",
+      "Open circuit",
+      "Breakdown"
+    ],
+    "answer": 1,
+    "explanation": "In saturation, both the base-emitter and base-collector junctions are forward biased.",
+    "image": null
+  }
+]
