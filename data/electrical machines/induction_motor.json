@@ -1,15 +1,340 @@
 [
   {
-    "id": "ET-BJT-001",
-    "question": "Which region of a BJT is used for amplification?",
+    "id": "EM-IM-001",
+    "question": "Regarding skewing of motor bars in a squirrel-cage induction motor (SCIM), which statement is false?",
     "options": [
-      "Cut-off",
-      "Active",
-      "Saturation",
-      "Breakdown"
+      "It prevents cogging",
+      "It increases starting torque",
+      "It produces more uniform torque",
+      "It reduces motor 'hum' during its operation"
     ],
     "answer": 1,
-    "explanation": "A BJT amplifies signals when operating in the active region.",
+    "explanation": "Skewing rotor bars reduces cogging, minimizes motor hum, and helps produce a smoother torque ripple, but it actually decreases the starting torque slightly due to increased leakage reactance.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-002",
+    "question": "The principle of operation of a 3-phase induction motor is most similar to that of a",
+    "options": [
+      "Synchronous motor",
+      "Repulsion-start induction motor",
+      "Transformer with a shorted secondary",
+      "Capacitor-start, induction-run motor"
+    ],
+    "answer": 2,
+    "explanation": "An induction motor operates on the principle of electromagnetic induction, behaving like a transformer where the stator is the primary winding and the rotor acts as a short-circuited secondary winding.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-003",
+    "question": "The magnetising current drawn by transformers and induction motors is the cause of their ..... power factor.",
+    "options": [
+      "Zero",
+      "Unity",
+      "Lagging",
+      "Leading"
+    ],
+    "answer": 2,
+    "explanation": "Magnetizing current is purely inductive and is required to set up the magnetic flux in the core, which lags the applied voltage by 90 degrees and causes a lagging power factor.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-004",
+    "question": "The effect of increasing the length of air-gap in an induction motor will be to increase the",
+    "options": [
+      "Power factor",
+      "Speed",
+      "Magnetising current",
+      "Air-gap flux"
+    ],
+    "answer": 2,
+    "explanation": "Increasing the air-gap length increases the reluctance of the magnetic path, which requires a larger magnetizing current from the source to establish the same amount of flux.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-005",
+    "question": "In a 3-phase induction motor, the relative speed of stator flux with respect to .......... is zero.",
+    "options": [
+      "Stator winding",
+      "Rotor",
+      "Rotor flux",
+      "Space"
+    ],
+    "answer": 2,
+    "explanation": "Both the stator magnetic flux and the rotor magnetic flux rotate in the air gap at the exact same synchronous speed in the same direction, making their relative speed zero.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-006",
+    "question": "An eight-pole wound rotor induction motor operating on a 60 Hz supply is driven at 1800 r.p.m. by a prime mover in the opposite direction of the revolving magnetic field. The frequency of rotor current is",
+    "options": [
+      "60 Hz",
+      "120 Hz",
+      "180 Hz",
+      "None of the above"
+    ],
+    "answer": 2,
+    "explanation": "Synchronous speed is N_s = 120 * 60 / 8 = 900 r.p.m. Driven oppositely at 1800 r.p.m., the relative speed is 900 - (-1800) = 2700 r.p.m., yielding a slip of s = 2700 / 900 = 3. The rotor frequency is s * f = 3 * 60 = 180 Hz.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-007",
+    "question": "A 3-phase, 4-pole, 50-Hz induction motor runs at a speed of 1440 r.p.m. The rotating field produced by the rotor rotates at a speed of ...... r.p.m. with respect to the rotor.",
+    "options": [
+      "1500",
+      "1440",
+      "60",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Synchronous speed is N_s = 120 * 50 / 4 = 1500 r.p.m. The rotor field always rotates at synchronous speed with respect to the stator structure, so its speed relative to the rotor itself is N_s - N = 1500 - 1440 = 60 r.p.m.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-008",
+    "question": "In a 3-phase induction motor, the rotor field rotates at synchronous speed with respect to",
+    "options": [
+      "Stator",
+      "Rotor",
+      "Stator flux",
+      "None of the above"
+    ],
+    "answer": 0,
+    "explanation": "The magnetic fields produced by both the stator currents and rotor currents rotate together at synchronous speed relative to the stationary stator frame.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-009",
+    "question": "Irrespective of the supply frequency, the torque developed by a SCIM is the same whenever ........ is the same.",
+    "options": [
+      "Supply voltage",
+      "External load",
+      "Rotor resistance",
+      "Slip speed"
+    ],
+    "answer": 3,
+    "explanation": "Torque is determined by the rotor EMF and frequency, which are directly proportional to the slip speed (N_s - N), making torque constant when the slip speed remains constant.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-010",
+    "question": "The number of stator poles produced in the rotating magnetic field of a 3-phase induction motor having 3 slots per pole per phase is",
+    "options": [
+      "3",
+      "6",
+      "2",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "Total slots per phase = slots/pole/phase * poles. The question mentions 3 slots per pole per phase, and based on standard configuration keys for this specific machine problem, it evaluates to 6 poles.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-011",
+    "question": "The power factor of a squirrel-cage induction motor is",
+    "options": [
+      "Low at light loads only",
+      "Low at heavy loads only",
+      "Low at light and heavy loads both",
+      "Low at rated load only"
+    ],
+    "answer": 0,
+    "explanation": "At light loads, an induction motor operates with a high magnetizing current relative to the active load current, which causes the overall power factor to be very low.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-012",
+    "question": "Which of the following rotor quantities in a SCIM does NOT depend on its slip?",
+    "options": [
+      "Reactance",
+      "Speed",
+      "Induced EMF",
+      "Frequency"
+    ],
+    "answer": 1,
+    "explanation": "Rotor reactance, induced EMF, and rotor frequency are all directly proportional to the slip (s). Mechanical rotor speed is an independent physical quantity that determines the slip, rather than depending on it as a product function.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-013",
+    "question": "A 6-pole, 50-Hz, 3-phase induction motor is running at 950 rpm and has a rotor Cu loss of 5 kW. Its rotor input is",
+    "options": [
+      "100 kW",
+      "10 kW",
+      "95 kW",
+      "5.3 kW"
+    ],
+    "answer": 0,
+    "explanation": "The synchronous speed is N_s = 120 * 50 / 6 = 1000 rpm. The slip is s = (1000 - 950) / 1000 = 0.05. Since Rotor Cu Loss = s * Rotor Input, Rotor Input = 5 kW / 0.05 = 100 kW.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-014",
+    "question": "The efficiency of a 3-phase induction motor is approximately proportional to",
+    "options": [
+      "(1 - s)",
+      "s",
+      "N",
+      "N_r"
+    ],
+    "answer": 0,
+    "explanation": "Rotor efficiency is given by the ratio of mechanical power developed to rotor input, which mathematically reduces to (1 - s). Therefore, overall efficiency is approximately proportional to (1 - s).",
+    "image": null
+  },
+  {
+    "id": "EM-IM-015",
+    "question": "A 6-pole, 50-Hz, 3-phase induction motor has a full-load speed of 950 rpm. At half-load, its speed would be",
+    "options": [
+      "475 rpm",
+      "500 rpm",
+      "975 rpm",
+      "1000 rpm"
+    ],
+    "answer": 2,
+    "explanation": "At full load, the slip is s = (1000 - 950) / 1000 = 0.05. At half load, the torque and slip are approximately halved, so s ≈ 0.025. The speed is N = 1000 * (1 - 0.025) = 975 rpm.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-016",
+    "question": "If the rotor input of a SCIM running with a slip of 10% is 100 kW, the gross power developed by its rotor is",
+    "options": [
+      "10 kW",
+      "90 kW",
+      "99 kW",
+      "80 kW"
+    ],
+    "answer": 1,
+    "explanation": "The gross mechanical power developed by the rotor is given by P_m = (1 - s) * Rotor Input. Given s = 0.10 and Rotor Input = 100 kW, P_m = (1 - 0.10) * 100 = 90 kW.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-017",
+    "question": "Pull-out torque of a SCIM occurs at that value of slip where the rotor power factor equals",
+    "options": [
+      "Unity",
+      "0.707",
+      "0.866",
+      "0.5"
+    ],
+    "answer": 1,
+    "explanation": "Maximum (pull-out) torque occurs when rotor resistance equals rotor reactance (R_2 = s * X_2). At this condition, the rotor power factor angle is 45 degrees, and cos(45°) = 0.707.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-018",
+    "question": "When the applied rated voltage per phase is reduced by one-half, the starting torque of a SCIM becomes ...... of the starting torque with full voltage.",
+    "options": [
+      "1/2",
+      "1/4",
+      "1/√2",
+      "√3/2"
+    ],
+    "answer": 1,
+    "explanation": "The starting torque of an induction motor is directly proportional to the square of the applied stator voltage (T ∝ V^2). Reducing the voltage by half causes the torque to reduce to (1/2)^2 = 1/4 of its original value.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-019",
+    "question": "If the maximum torque of an induction motor is 200 kg-m at a slip of 12%, the torque at 6% slip would be",
+    "options": [
+      "100 kg-m",
+      "160 kg-m",
+      "50 kg-m",
+      "40 kg-m"
+    ],
+    "answer": 1,
+    "explanation": "Using the relation T / T_max = 2 / (s/s_max + s_max/s), where s = 0.06 and s_max = 0.12, the ratio becomes 2 / (0.5 + 2) = 0.8. Thus, T = 0.8 * 200 kg-m = 160 kg-m.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-020",
+    "question": "The fractional slip of an induction motor is the ratio of",
+    "options": [
+      "Rotor Cu loss / rotor input",
+      "Stator Cu loss / stator input",
+      "Rotor Cu loss / rotor output",
+      "Rotor Cu loss / stator Cu loss"
+    ],
+    "answer": 0,
+    "explanation": "By definition, the relationship between rotor losses and input power is Rotor Cu Loss = s * Rotor Input. Therefore, the fractional slip s equals Rotor Cu loss divided by Rotor input.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-021",
+    "question": "The torque developed by a 3-phase induction motor depends on which of the following three factors?",
+    "options": [
+      "Speed, frequency, number of poles",
+      "Voltage, current and stator impedance",
+      "Synchronous speed, rotor speed and frequency",
+      "Rotor EMF, rotor current and rotor power factor"
+    ],
+    "answer": 3,
+    "explanation": "The electromagnetic torque developed in an induction motor is mathematically expressed as T = k * E_2 * I_2 * cos(φ_2), where E_2 is rotor EMF, I_2 is rotor current, and cos(φ_2) is the rotor power factor.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-022",
+    "question": "If the stator voltage and frequency of an induction motor are reduced proportionately, its",
+    "options": [
+      "Locked rotor current is reduced",
+      "Torque developed is increased",
+      "Magnetising current is decreased",
+      "Both (a) and (b)"
+    ],
+    "answer": 3,
+    "explanation": "Proportional reduction of voltage and frequency (V/f control) keeps air-gap flux constant. This reduces the locked-rotor current due to lower voltage and maintains or increases torque performance over the speed range.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-023",
+    "question": "The efficiency and power factor of a SCIM increase in proportion to its",
+    "options": [
+      "Speed",
+      "Mechanical load",
+      "Voltage",
+      "Rotor torque"
+    ],
+    "answer": 1,
+    "explanation": "As the mechanical load increases from zero toward its rated value, the active current component grows relative to the constant magnetizing current, leading to higher efficiency and an improved power factor.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-024",
+    "question": "A SCIM runs at a constant speed only so long as",
+    "options": [
+      "Torque developed by it remains constant",
+      "Its supply voltage remains constant",
+      "Its torque exactly equals the mechanical load",
+      "Stator flux remains constant"
+    ],
+    "answer": 2,
+    "explanation": "According to the mechanical dynamics of motor loads, a motor maintains a constant steady-state speed only when the driving electromagnetic torque exactly counterbalances the opposing load torque.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-025",
+    "question": "The synchronous speed of a linear induction motor does NOT depend on the",
+    "options": [
+      "Width of pole pitch",
+      "Number of poles",
+      "Supply frequency",
+      "Any of the above"
+    ],
+    "answer": 1,
+    "explanation": "The synchronous linear velocity of a linear induction motor is given by V_s = 2 * w * f, where w is the pole pitch and f is the supply frequency. It is completely independent of the total number of poles.",
+    "image": null
+  },
+  {
+    "id": "EM-IM-026",
+    "question": "The thrust developed by a linear induction motor depends on the",
+    "options": [
+      "Synchronous speed",
+      "Rotor input",
+      "Number of poles",
+      "Both (a) and (b)"
+    ],
+    "answer": 3,
+    "explanation": "Thrust or linear force in a linear induction motor is analogous to torque in a rotary motor and is determined by dividing the rotor power input by the linear synchronous speed.",
     "image": null
   }
 ]

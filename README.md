@@ -477,15 +477,11 @@ Recommended workflow:
 
 Small batches are recommended because they make errors easier to find.
 
----
-
 # 15. Master PDF → JSON Conversion Prompt
 
 The following prompt is the standard conversion prompt for EEE MCQ Vault.
 
 It can be used with Gemini, ChatGPT, or another capable AI model.
-
-
 
 ## MASTER PROMPT
 
@@ -752,8 +748,6 @@ Do not return anything before or after the JSON.
 If the source contains questions that cannot be reliably converted, stop and identify those questions for manual review rather than silently generating incorrect data.
 ```
 
----
-
 # 16. Recommended Conversion Instructions
 
 When using the master prompt, provide the AI with:
@@ -774,8 +768,6 @@ Starting ID: ET-BJT-006
 Convert the uploaded PDF using the EEE MCQ Vault master prompt.
 ```
 
----
-
 # 17. JSON Quality Checklist
 
 Before adding a generated JSON batch to the project, verify:
@@ -792,8 +784,6 @@ Before adding a generated JSON batch to the project, verify:
 * [ ] `image` is `null` when no image is required
 * [ ] No obvious OCR errors
 * [ ] No invented information
-
----
 
 # 18. Example Question Bank
 
@@ -818,8 +808,6 @@ Example `data/electronics/bjt.json`:
 ```
 
 More questions are simply added to the same JSON array.
-
----
 
 # 19. Maintenance Rules
 
@@ -861,8 +849,6 @@ style.css
 app.js
 ```
 
----
-
 # 20. Design Principle
 
 The website is the engine.
@@ -889,8 +875,6 @@ Together:
 ```
 
 The goal is to spend time building the question bank and preparing for EEE jobs, not maintaining the website.
-
----
 
 # 21. Version
 
