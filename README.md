@@ -1,19 +1,8 @@
-Absolutely. This is a good time to create the README because the architecture and JSON standard are now stable.
-
-I've also updated the master prompt so explanations can be **as long as necessary, but never more than 5 sentences**. I would explicitly tell the AI not to invent explanations when the source is unclear.
-
-Below is a complete `README.md` you can copy directly into GitHub.
-
-# `README.md`
-
-````markdown
 # EEE MCQ Vault
 
 A simple, mobile-friendly MCQ practice website for Electrical & Electronics Engineering (EEE) job preparation.
 
 The main goal of this project is not to build a feature-heavy learning platform. It is a lightweight personal question bank that allows EEE MCQs collected from books to be converted into a standard JSON format and practiced quickly on a phone or PC.
-
----
 
 ## 1. Project Philosophy
 
@@ -30,7 +19,6 @@ Most future work should only involve:
 3. Adding the JSON questions to the appropriate question-bank file.
 4. Adding a new taxonomy entry in `config.js` when a new topic/subtopic is introduced.
 
----
 
 # 2. Main Features
 
@@ -68,7 +56,6 @@ The website logic does not contain the actual questions.
 
 This means the question bank can grow without modifying the application engine.
 
----
 
 # 3. Project Architecture
 
@@ -109,31 +96,20 @@ EEE-MCQ-Vault/
         └── ...
 ````
 
----
-
 # 4. File Responsibilities
 
 ## `index.html`
 
 Contains the basic website structure.
-
 Normally this file should NOT need to be edited when adding new topics or questions.
-
 Topic cards and subtopic buttons are generated dynamically from `config.js`.
-
----
 
 ## `style.css`
 
 Contains the visual design.
-
 The website is designed primarily for mobile screens, while still supporting PC browsers.
-
 The UI uses a dark, eye-friendly theme with compact spacing so that more questions can be viewed with less scrolling.
-
-Normally this file should not need to be edited when adding questions.
-
----
+Normally, this file should not need to be edited when adding questions.
 
 ## `app.js`
 
@@ -156,8 +132,6 @@ Responsibilities include:
 * Image handling
 
 Question data should NOT be hardcoded into `app.js`.
-
----
 
 ## `config.js`
 
@@ -194,8 +168,6 @@ const MCQ_CONFIG = {
     ]
 };
 ```
-
----
 
 # 5. Taxonomy
 
@@ -235,8 +207,6 @@ Future topics may include:
 
 Topic codes should remain short and stable.
 
----
-
 # 6. Current Subtopic Codes
 
 ## Electronics — `ET`
@@ -258,8 +228,6 @@ ET-FET-001
 ET-MOS-001
 ET-OA-001
 ```
-
----
 
 ## Electrical Machines — `EM`
 
@@ -283,8 +251,6 @@ EM-SM-001
 EM-SG-001
 ```
 
----
-
 ## Control Systems — `CS`
 
 | Subtopic       | Code  |
@@ -296,8 +262,6 @@ Example:
 ```text
 CS-BASIC-001
 ```
-
----
 
 # 7. Adding a New Subtopic
 
@@ -322,8 +286,6 @@ Then add it to `config.js`:
 The website will automatically generate the new subtopic button.
 
 No changes to `index.html` are required.
-
----
 
 # 8. Adding a New Topic
 
@@ -358,8 +320,6 @@ Add a topic to `config.js`:
 
 The dashboard will automatically generate the Power Systems card.
 
----
-
 # 9. Standard Question JSON Format
 
 Every question must follow this structure:
@@ -380,8 +340,6 @@ Every question must follow this structure:
 }
 ```
 
----
-
 # 10. JSON Field Specification
 
 Each question contains exactly six fields.
@@ -394,8 +352,6 @@ Each question contains exactly six fields.
 | `answer`      | Number      | Correct option index, 0–3    |
 | `explanation` | String      | Explanation of the answer    |
 | `image`       | String/null | Image path or `null`         |
-
----
 
 # 11. Answer Indexing
 
@@ -426,7 +382,7 @@ This means:
 Correct answer = Option C
 ```
 
----
+
 
 # 12. Images
 
@@ -460,7 +416,7 @@ The JSON should contain:
 
 This keeps image management simple and prevents broken references when questions are reorganized.
 
----
+
 
 # 13. Permanent Question IDs
 
@@ -488,7 +444,7 @@ is perfectly acceptable.
 
 The ID identifies the question permanently.
 
----
+
 
 # 14. Question Bank Workflow
 
@@ -529,7 +485,7 @@ The following prompt is the standard conversion prompt for EEE MCQ Vault.
 
 It can be used with Gemini, ChatGPT, or another capable AI model.
 
----
+
 
 ## MASTER PROMPT
 
@@ -955,16 +911,3 @@ Content pipeline: Established
 ```
 
 Future development should prioritize the question bank over adding unnecessary application features.
-
-```
-
-### One recommendation before you commit this to GitHub
-
-Keep this README as the **single source of truth** for the project. In particular, don't keep a second copy of the conversion prompt in some other note. If we ever change the JSON schema in a future version, update the README's prompt and version together.
-
-And your updated rule is now clear:
-
-> **Explanation: as long as necessary, maximum 5 sentences.**
-
-That's a much better rule than forcing every explanation into one sentence, especially for calculation-based EEE MCQs.
-```
