@@ -1,15 +1,496 @@
 [
   {
-    "id": "ET-BJT-001",
-    "question": "Which region of a BJT is used for amplification?",
+    "id": "EM-TR-001",
+    "question": "A transformer transforms",
     "options": [
-      "Cut-off",
-      "Active",
-      "Saturation",
-      "Breakdown"
+      "frequency",
+      "voltage",
+      "current",
+      "voltage and current."
+    ],
+    "answer": 3,
+    "explanation": "A static transformer steps voltage up or down while simultaneously changing the current inversely to keep power constant.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-002",
+    "question": "Which of the following is not a basic element of a transformer?",
+    "options": [
+      "core",
+      "primary winding",
+      "secondary winding",
+      "mutual flux."
+    ],
+    "answer": 3,
+    "explanation": "The core, primary winding, and secondary winding are structural components, whereas mutual flux is a functional magnetic phenomenon.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-003",
+    "question": "In an ideal transformer,",
+    "options": [
+      "windings have no resistance",
+      "core has no losses",
+      "core has infinite permeability",
+      "all of the above."
+    ],
+    "answer": 3,
+    "explanation": "An ideal transformer is a theoretical concept where winding resistance, core losses, and magnetic reluctance are entirely nonexistent.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-004",
+    "question": "The main purpose of using core in a transformer is to",
+    "options": [
+      "decrease iron losses",
+      "prevent eddy current loss",
+      "eliminate magnetic hysteresis",
+      "decrease reluctance of the common magnetic circuit."
+    ],
+    "answer": 3,
+    "explanation": "A high-permeability iron core provides a low-reluctance path to maximize magnetic flux coupling between the windings.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-005",
+    "question": "Transformer cores are laminated in order to",
+    "options": [
+      "simplify its construction",
+      "minimise eddy current loss",
+      "reduce cost",
+      "reduce hysteresis loss."
     ],
     "answer": 1,
-    "explanation": "A BJT amplifies signals when operating in the active region.",
+    "explanation": "Thin laminations break up circulating path loops to restrict eddy currents and lower core heating losses.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-006",
+    "question": "A transformer having 1000 primary turns is connected to a 250-V a.c. supply. For a secondary voltage of 400 V, the number of secondary turns should be",
+    "options": [
+      "1600",
+      "250",
+      "400",
+      "1250"
+    ],
+    "answer": 0,
+    "explanation": "Using the turn ratio formula, the secondary turns equal (400 V / 250 V) multiplied by 1000, which evaluates to 1600.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-007",
+    "question": "The primary and secondary induced e.m.fs. E_1 and E_2 in a two-winding transformer are always",
+    "options": [
+      "equal in magnitude",
+      "antiphase with each other",
+      "in-phase with each other",
+      "determined by load on transformer secondary."
+    ],
+    "answer": 2,
+    "explanation": "Both electromotive forces are induced by the exact same mutual core flux, keeping them perfectly in-phase with one another.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-008",
+    "question": "A step-up transformer increases",
+    "options": [
+      "voltage",
+      "current",
+      "power",
+      "frequency."
+    ],
+    "answer": 0,
+    "explanation": "A step-up transformer increases the potential difference from the primary side to a higher value on the secondary side.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-009",
+    "question": "The primary and secondary windings of an ordinary 2-winding transformer always have",
+    "options": [
+      "different number of turns",
+      "same size of copper wire",
+      "a common magnetic circuit",
+      "separate magnetic circuits."
+    ],
+    "answer": 2,
+    "explanation": "An ordinary two-winding transformer depends on a shared physical magnetic core to link the primary and secondary fields.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-010",
+    "question": "In a transformer, the leakage flux of each winding is proportional to the current in that winding because",
+    "options": [
+      "Ohm's law applies to magnetic circuits",
+      "leakage paths do not saturate",
+      "the two windings are electrically isolated",
+      "mutual flux is confined to the core."
+    ],
+    "answer": 1,
+    "explanation": "Leakage flux paths close primarily through air gaps which exhibit constant reluctance and do not experience magnetic saturation.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-011",
+    "question": "In a two-winding transformer, the e.m.f. per turn in secondary winding is always ....... the induced e.m.f. per turn in primary.",
+    "options": [
+      "equal to K times",
+      "equal to 1/K times",
+      "equal to",
+      "greater than."
+    ],
+    "answer": 2,
+    "explanation": "Since the same mutual magnetic flux links both windings, the voltage induced per individual turn is exactly identical in both the primary and secondary.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-012",
+    "question": "In relation to a transformer, the ratio 20:1 indicates that",
+    "options": [
+      "there are 20 turns on primary one turn on secondary",
+      "secondary voltage is 1/20th of primary voltage",
+      "primary current is 20 times greater than the secondary current.",
+      "for every 20 turns on primary, there is one turn on secondary."
+    ],
+    "answer": 3,
+    "explanation": "A turn ratio of 20:1 specifies that for every group of twenty loops on the primary winding, there corresponds a single loop on the secondary winding.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-013",
+    "question": "In performing the short circuit test of a transformer",
+    "options": [
+      "high voltage side is usually short circuited",
+      "low voltage side is usually short circuited",
+      "any side is short circuited with preference",
+      "none of the above."
+    ],
+    "answer": 1,
+    "explanation": "Short-circuiting the low-voltage side allows the test to be safely and conveniently performed by feeding a smaller, manageable rated current on the high-voltage side.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-014",
+    "question": "The equivalent resistance of the primary of a transformer having K = 5 and R_1 = 0.1 ohm when referred to secondary becomes ...... ohm.",
+    "options": [
+      "0.5",
+      "0.02",
+      "0.004",
+      "2.5"
+    ],
+    "answer": 3,
+    "explanation": "When primary resistance is shifted to the secondary side, it is multiplied by the square of the transformation ratio, yielding 0.1 multiplied by 25, which equals 2.5 Ohms.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-015",
+    "question": "A transformer has negative voltage regulation when its load power factor is",
+    "options": [
+      "zero",
+      "unity",
+      "leading",
+      "lagging."
+    ],
+    "answer": 2,
+    "explanation": "A leading power factor load causes a capacitive voltage rise across the secondary terminals, which results in a negative voltage regulation characteristic.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-016",
+    "question": "The primary reason why open-circuit test is performed on the low-voltage winding of the transformer is that it",
+    "options": [
+      "draws sufficiently large on-load current for convenient reading",
+      "requires least voltage to perform the test",
+      "needs minimum power input",
+      "involves less core loss."
+    ],
+    "answer": 0,
+    "explanation": "Performing the open-circuit test on the low-voltage side ensures the excitation current is large enough to be accurately measured by standard laboratory instruments.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-017",
+    "question": "No-load test on a transformer is carried out to determine",
+    "options": [
+      "copper loss",
+      "magnetising current",
+      "magnetising current and no-load loss",
+      "efficiency of the transformer."
+    ],
+    "answer": 2,
+    "explanation": "The no-load test measures the open-circuit core losses along with the specific magnetizing current component required to establish the core flux.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-018",
+    "question": "The main purpose of performing open-circuit test on a transformer is to measure its",
+    "options": [
+      "Cu loss",
+      "core loss",
+      "total loss",
+      "insulation resistance."
+    ],
+    "answer": 1,
+    "explanation": "With the secondary open-circuited, the input power supplies negligible copper loss, directly giving the total internal core loss of the transformer.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-019",
+    "question": "During short-circuit test, the iron loss of a transformer is negligible because",
+    "options": [
+      "the entire input is just sufficient to meet Cu losses only",
+      "flux produced is a small fraction of the normal flux",
+      "iron core becomes fully saturated",
+      "supply frequency is held constant."
+    ],
+    "answer": 1,
+    "explanation": "The applied voltage during a short-circuit test is very low, which reduces the core flux to a tiny fraction of its normal operating level and renders iron losses negligible.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-020",
+    "question": "The iron loss of a transformer at 400 Hz is 10 W. Assuming that eddy current and hysteresis losses vary as the square of flux density, the iron loss of the transformer at rated voltage but at 50 Hz would be ...... watt.",
+    "options": [
+      "80",
+      "640",
+      "1.25",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "Since flux density is inversely proportional to frequency at rated voltage, lowering frequency from 400 Hz to 50 Hz scales iron loss by a factor of eight squared, giving 640 Watts.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-021",
+    "question": "In operating a 400 Hz transformer at 50 Hz",
+    "options": [
+      "only voltage is reduced in the same proportion as the frequency",
+      "only kVA rating is reduced in the same proportion as the frequency",
+      "both voltage and kVA rating are reduced in the same proportion as the frequency",
+      "none of the above."
+    ],
+    "answer": 2,
+    "explanation": "To maintain a constant core flux density, the operating voltage must drop linearly with frequency, which directly scales down the maximum kVA capacity.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-022",
+    "question": "The voltage applied to the h.v. side of a transformer during short-circuit test is 2% of its rated voltage. The core loss will be ...... percent of the rated core loss.",
+    "options": [
+      "4",
+      "0.4",
+      "0.25",
+      "0.04"
+    ],
+    "answer": 3,
+    "explanation": "Core losses vary as the square of the applied voltage, so dropping the test voltage to 2 percent reduces the loss to 0.04 percent of its nominal value.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-023",
+    "question": "Transformers are rated in kVA instead of kW because",
+    "options": [
+      "load power factor is often not known",
+      "kVA is fixed whereas kW depends on load p.f.",
+      "total transformer loss depends on volt-ampere",
+      "it has become customary."
+    ],
+    "answer": 2,
+    "explanation": "Core losses depend strictly on operating voltage, and copper losses depend on current, making total machine heating independent of the load power factor.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-024",
+    "question": "When a 400-Hz transformer is operated at 50 Hz its kVA rating is",
+    "options": [
+      "reduced to 1/8",
+      "increased 8 times",
+      "unaffected",
+      "increased 64 times."
+    ],
+    "answer": 0,
+    "explanation": "Since the design voltage must be decreased by a factor of eight to protect the core from saturating, the net continuous kVA capacity drops to one-eighth.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-025",
+    "question": "At relatively light loads, transformer efficiency is low because",
+    "options": [
+      "secondary output is low",
+      "transformer losses are high",
+      "fixed loss is high in proportion to the output",
+      "Cu loss is small."
+    ],
+    "answer": 2,
+    "explanation": "Under fractional loads, the constant core losses become very large relative to the small amount of useful electrical power being delivered.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-026",
+    "question": "A 200 kVA transformer has an iron loss of 1 kW and full-load Cu loss of 2 kW. Its load kVA corresponding to maximum efficiency is ...... kVA.",
+    "options": [
+      "100",
+      "141.4",
+      "50",
+      "200"
+    ],
+    "answer": 1,
+    "explanation": "Maximum efficiency occurs when copper loss equals iron loss, which happens at full load kVA multiplied by the square root of (1 kW / 2 kW), yielding 141.4 kVA.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-027",
+    "question": "If Cu loss of a transformer at 7/8th full load is 4900 W, then its full-load Cu loss would be ...... watt.",
+    "options": [
+      "5600",
+      "6400",
+      "375",
+      "429"
+    ],
+    "answer": 1,
+    "explanation": "Copper losses scale with the square of the fraction of the load, meaning the nominal full-load copper loss is 4900 divided by (7/8) squared, which equals 6400 Watts.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-028",
+    "question": "The ordinary efficiency of a given transformer is maximum when",
+    "options": [
+      "it runs at half full-load",
+      "it runs at full-load",
+      "its Cu loss equals iron loss",
+      "it runs slightly overload."
+    ],
+    "answer": 2,
+    "explanation": "The fundamental mathematical condition for optimal operating efficiency in any transformer is achieved when its variable copper losses match its fixed core losses.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-029",
+    "question": "The output current corresponding to maximum efficiency for a transformer having core loss of 100 W and equivalent resistance referred to secondary of 0.25 Ω is ...... ampere.",
+    "options": [
+      "20",
+      "25",
+      "5",
+      "400"
+    ],
+    "answer": 0,
+    "explanation": "Setting I^2 * R equal to the iron loss gives I^2 * 0.25 = 100, which simplifies to a secondary output current of exactly 20 Amperes.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-030",
+    "question": "The maximum efficiency of a 100-kVA transformer having iron loss of 900 W and F.L. Cu loss of 1600 W occurs at ...... kVA.",
+    "options": [
+      "56.3",
+      "133.3",
+      "75",
+      "177.7"
+    ],
+    "answer": 2,
+    "explanation": "The efficiency reaches its peak at 100 kVA multiplied by the square root of (900 W / 1600 W), which simplifies precisely to 75 kVA.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-031",
+    "question": "The all-day efficiency of a transformer depends primarily on",
+    "options": [
+      "its copper loss",
+      "the amount of load",
+      "the duration of load",
+      "both (b) and (c)."
+    ],
+    "answer": 3,
+    "explanation": "All-day efficiency evaluates total energy output over a 24-hour cycle, making it highly dependent on both the magnitude and duration of daily loading conditions.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-032",
+    "question": "The marked increase in kVA capacity produced by connecting a 2 winding transformer as an autotransformer is due to",
+    "options": [
+      "increase in turn ratio",
+      "increase in secondary voltage",
+      "increase in transformer efficiency",
+      "establishment of conductive link between primary and secondary."
+    ],
+    "answer": 3,
+    "explanation": "The auto-transformer configuration introduces a direct electrical connection that allows power to be transferred both conductively and inductively, raising net kVA capacity.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-033",
+    "question": "The kVA rating of an ordinary 2-winding transformer is increased when connected as an autotransformer because",
+    "options": [
+      "transformation ratio is increased",
+      "secondary voltage is increased",
+      "energy is transferred both inductively and conductivity",
+      "secondary current is increased."
+    ],
+    "answer": 2,
+    "explanation": "Conducted energy flows directly through the shared connection without using magnetic coupling, which substantially boosts the total output rating.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-034",
+    "question": "The saving in Cu achieved by converting a 2-winding transformer into an autotransformer is determined by",
+    "options": [
+      "voltage transformation ratio",
+      "load on the secondary",
+      "magnetic quality of core material",
+      "size of the transformer core."
+    ],
+    "answer": 0,
+    "explanation": "The quantity of conductor copper saved is directly proportional to the inverse of the voltage transformation ratio of the autotransformer.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-035",
+    "question": "An autotransformer having a transformation ratio of 0.8 supplies a load of 3 kW. The power transferred conductively from primary to secondary is ....... kW.",
+    "options": [
+      "0.6",
+      "2.4",
+      "1.5",
+      "0.27"
+    ],
+    "answer": 1,
+    "explanation": "Conductively transferred power is calculated by multiplying the total power by the transformation ratio, giving 3 kW times 0.8, which equals 2.4 kW.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-036",
+    "question": "The essential condition for parallel operation of two 1-phase transformers is that they should have the same",
+    "options": [
+      "polarity",
+      "kVA rating",
+      "voltage ratio",
+      "percentage impedance."
+    ],
+    "answer": 0,
+    "explanation": "Identical terminal polarity is strictly mandatory to prevent massive internal short-circuit circulating currents when matching connections in parallel.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-037",
+    "question": "If the impedance triangles of two transformers operating in parallel are not identical in shape and size, the two transformers will",
+    "options": [
+      "share the load unequally",
+      "get heated unequally",
+      "have a circulatory secondary current even when unloaded",
+      "run with different power factors."
+    ],
+    "answer": 3,
+    "explanation": "Mismatched X/R ratios cause a displacement between the internal current vectors, forcing individual units to operate at distinct power factors.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-038",
+    "question": "Two transformers A and B having equal outputs and voltage ratios but unequal percentage impedances of 4 and 2 are operating in parallel. Transformer A will be running over-load by ....... percent.",
+    "options": [
+      "50",
+      "66",
+      "33",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "The shared load distributes inversely to individual percentage impedances, causing the lower impedance unit B to bear twice the load burden compared to A.",
     "image": null
   }
 ]

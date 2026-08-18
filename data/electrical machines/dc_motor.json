@@ -1,15 +1,444 @@
 [
   {
-    "id": "ET-BJT-001",
-    "question": "Which region of a BJT is used for amplification?",
+    "id": "EM-DCM-001",
+    "question": "In a d.c. motor, unidirectional torque is produced with the help of",
     "options": [
-      "Cut-off",
-      "Active",
-      "Saturation",
-      "Breakdown"
+      "brushes",
+      "commutator",
+      "end-plates",
+      "both (a) and (b)"
+    ],
+    "answer": 3,
+    "explanation": "The commutator reverses armature current direction as conductors pass between poles, while brushes provide electrical contact, jointly producing unidirectional torque.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-002",
+    "question": "The counter e.m.f. of a d.c. motor",
+    "options": [
+      "often exceeds the supply voltage",
+      "aids the applied voltage",
+      "helps in energy conversion",
+      "regulates its armature voltage"
+    ],
+    "answer": 2,
+    "explanation": "The counter e.m.f. acts as a mechanism through which electrical energy is converted into mechanical energy in a d.c. motor.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-003",
+    "question": "The normal value of the armature resistance of a d.c. motor is",
+    "options": [
+      "0.005 Ω",
+      "0.5 Ω",
+      "10 Ω",
+      "100 Ω"
     ],
     "answer": 1,
-    "explanation": "A BJT amplifies signals when operating in the active region.",
+    "explanation": "Armature resistance is typically kept quite low, around 0.5 Ohm, to minimize copper losses and maximize motor efficiency.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-004",
+    "question": "The E_b/V ratio of a d.c. motor is an indication of its",
+    "options": [
+      "efficiency",
+      "speed regulation",
+      "starting torque",
+      "Running Torque"
+    ],
+    "answer": 0,
+    "explanation": "The ratio of back e.m.f. to supply voltage represents the electrical efficiency of a d.c. motor.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-005",
+    "question": "The mechanical power developed by the armature of a d.c. motor is equal to",
+    "options": [
+      "armature current multiplied by back e.m.f.",
+      "power input minus losses",
+      "power output multiplied by efficiency",
+      "power output plus iron losses"
+    ],
+    "answer": 0,
+    "explanation": "The electrical power converted into mechanical power inside the armature is given by the product of the back e.m.f. and armature current.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-006",
+    "question": "The induced e.m.f. in the armature conductors of a d.c. motor is",
+    "options": [
+      "sinusoidal",
+      "trapezoidal",
+      "rectangular",
+      "alternating"
+    ],
+    "answer": 3,
+    "explanation": "The induced e.m.f. inside the actual armature coils of a d.c. motor changes direction dynamically and is alternating in nature.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-007",
+    "question": "A d.c. motor can be looked upon as d.c. generator with the power flow",
+    "options": [
+      "reduced",
+      "reversed",
+      "increased",
+      "modified"
+    ],
+    "answer": 1,
+    "explanation": "A d.c. motor shares identical construction with a generator but functions with reversed power flow, converting electrical input into mechanical output.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-008",
+    "question": "In a d.c. motor, the mechanical output power actually comes from",
+    "options": [
+      "field system",
+      "air-gap flux",
+      "back e.m.f.",
+      "electrical input power"
+    ],
+    "answer": 3,
+    "explanation": "The primary source of all mechanical output developed by a d.c. motor is the electrical input power delivered to the machine.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-009",
+    "question": "The maximum torque of d.c. motors is limited by",
+    "options": [
+      "commutation",
+      "heating",
+      "speed",
+      "armature current"
+    ],
+    "answer": 0,
+    "explanation": "Excessive current levels degrade commutation quality, causing severe brush sparking which restricts the ultimate maximum torque capability.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-010",
+    "question": "Which of the following quantity maintains the same direction whether a d.c. machine runs as a generator or as a motor?",
+    "options": [
+      "induced e.m.f.",
+      "armature current",
+      "field current",
+      "supply current"
+    ],
+    "answer": 0,
+    "explanation": "The induced e.m.f. retains a polarity determined by speed and field flux, meaning it maintains its direction regardless of whether the machine motors or generates.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-011",
+    "question": "Under constant load conditions, the speed of a d.c. motor is affected by",
+    "options": [
+      "field flux",
+      "armature current",
+      "back e.m.f.",
+      "both (b) and (c)"
+    ],
+    "answer": 0,
+    "explanation": "Since load is constant, armature current stays fixed, making the speed inversely dependent on the field flux.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-012",
+    "question": "It is possible to increase the field flux and, at the same time, increase the speed of a d.c. motor provided its ......... is held constant.",
+    "options": [
+      "applied voltage",
+      "torque",
+      "Armature circuit resistance",
+      "armature current"
+    ],
+    "answer": 3,
+    "explanation": "Speed is proportional to back e.m.f. divided by flux, so keeping armature current constant allows back e.m.f. to drop slower than flux adjustments.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-013",
+    "question": "The current drawn by a 120 V d.c. motor of armature resistance 0.5 Ω and back e.m.f. 110 V is ...... ampere.",
+    "options": [
+      "20",
+      "240",
+      "220",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "The armature current is calculated as (V - E_b) / R_a = (120 - 110) / 0.5 = 20 Amperes.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-014",
+    "question": "The shaft torque of a d.c. motor is less than its armature torque because of ........ losses.",
+    "options": [
+      "copper",
+      "mechanical",
+      "iron",
+      "rotational"
+    ],
+    "answer": 3,
+    "explanation": "Rotational losses, which include iron, friction, and windage losses, consume a portion of the developed armature torque before it reaches the shaft.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-015",
+    "question": "A d.c. motor develops a torque of 200 N-m at 25 rps. At 20 rps it will develop a torque of ........ N-m.",
+    "options": [
+      "200",
+      "160",
+      "250",
+      "128"
+    ],
+    "answer": 0,
+    "explanation": "For a shunt motor, the torque depends entirely on armature current and flux, remaining independent of the operational speed.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-016",
+    "question": "Neglecting saturation, if current taken by a series motor is increased from 10 A to 12 A, the percentage increase in its torque is ........ percent",
+    "options": [
+      "20",
+      "44",
+      "30.5",
+      "16.6"
+    ],
+    "answer": 1,
+    "explanation": "Without saturation, torque is proportional to the square of the current, giving an increase ratio of (12/10)^2 = 1.44, or a 44 percent increase.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-017",
+    "question": "If load on a d.c. shunt motor is increased, its speed is decreased due primarily to",
+    "options": [
+      "increase in its flux",
+      "decrease in back e.m.f.",
+      "increase in armature current",
+      "increase in brush drop"
+    ],
+    "answer": 1,
+    "explanation": "An increasing load causes a larger armature current drop, which directly decreases the back e.m.f. and reduces motor speed.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-018",
+    "question": "If the load current and flux of a d.c. motor are held constant and voltage applied across its armature is increased by 10 per cent, its speed will",
+    "options": [
+      "decrease by about 10 per cent",
+      "remain unchanged",
+      "increase by about 10 per cent",
+      "increase by 20 per cent."
+    ],
+    "answer": 2,
+    "explanation": "Motor speed is roughly directly proportional to the applied voltage when flux and load current are maintained constant.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-019",
+    "question": "If the pole flux of a d.c. motor approaches zero, its speed will",
+    "options": [
+      "approach zero",
+      "approach infinity",
+      "no change due to corresponding change in back e.m.f.",
+      "approach a stable value somewhere between zero and infinity."
+    ],
+    "answer": 1,
+    "explanation": "The operational speed of a motor is inversely proportional to flux, meaning speed dangerously races toward infinity as flux approaches zero.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-020",
+    "question": "If the field circuit of a loaded shunt motor is suddenly opened",
+    "options": [
+      "it would race to almost infinite speed",
+      "it would draw abnormally high armature current",
+      "circuit breaker or fuse will open the circuit before too much damage is done to the motor",
+      "torque developed by the motor would be reduced to zero."
+    ],
+    "answer": 2,
+    "explanation": "Opening the field circuit collapses the flux and drops back e.m.f., causing a massive current surge that trips protective circuit breakers.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-021",
+    "question": "Which of the following d.c. motor would be suitable for drives requiring high starting torque but only fairly constant speed such as crushers?",
+    "options": [
+      "shunt",
+      "series",
+      "compound",
+      "permanent magnet"
+    ],
+    "answer": 2,
+    "explanation": "Cumulative compound motors provide high starting torque due to the series field and a safe, fairly constant speed due to the shunt field.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-022",
+    "question": "A d.c. shunt motor is found suitable to drive fans because they require",
+    "options": [
+      "small torque at start up",
+      "large torque at high speeds",
+      "practically constant voltage",
+      "both (a) and (b)"
+    ],
+    "answer": 3,
+    "explanation": "Fans exhibit a centrifugal load characteristic requiring low initial torque but significantly higher torque as operational speed increases.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-023",
+    "question": "Which of the following load would be best driven by a d.c. compound motor?",
+    "options": [
+      "reciprocating pump",
+      "centrifugal pump",
+      "electric locomotive",
+      "fan"
+    ],
+    "answer": 0,
+    "explanation": "Reciprocating pumps demand intermittent, heavy load torques that are best handled by the drooping speed profile of a compound motor.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-024",
+    "question": "As the load is increased, the speed of a d.c. shunt motor",
+    "options": [
+      "increases proportionately",
+      "remains constant",
+      "increases slightly",
+      "reduces slightly"
+    ],
+    "answer": 3,
+    "explanation": "Increasing the load raises armature current, which slightly increases the internal voltage drop and marginally reduces the motor speed.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-025",
+    "question": "Between no-load and full-load, ......... motor develops the least torque",
+    "options": [
+      "series",
+      "shunt",
+      "cumulative compound",
+      "differential compound"
+    ],
+    "answer": 0,
+    "explanation": "A series motor develops very little torque at light loads because its field flux is directly dependent on the low armature current.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-026",
+    "question": "The T_a/I_a graph of a d.c. series motor is a",
+    "options": [
+      "parabola from no-load to overload",
+      "straight line throughout",
+      "parabola throughout",
+      "parabola upto full-load and a straight line at overloads."
+    ],
+    "answer": 3,
+    "explanation": "Torque is proportional to current squared before magnetic saturation occurs, and becomes linear once the core saturates at high currents.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-027",
+    "question": "As compared to shunt and compound motors, series motor has the highest torque because of its comparatively ......... at the start.",
+    "options": [
+      "lower armature resistance",
+      "stronger series field",
+      "fewer series turns",
+      "larger armature current"
+    ],
+    "answer": 1,
+    "explanation": "The large starting current passes directly through the series winding, creating a exceptionally strong magnetic field and high initial torque.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-028",
+    "question": "Unlike a shunt motor, it is difficult for a series motor to stall under heavy loading because",
+    "options": [
+      "it develops high overload torque",
+      "its flux remains constant",
+      "it slows down considerably",
+      "its back e.m.f. is reduced to almost zero."
+    ],
+    "answer": 0,
+    "explanation": "Heavy loading increases the series current and flux simultaneously, producing massive torque that prevents the machine from stalling.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-029",
+    "question": "When load is removed, ......... motor will run at the highest speed.",
+    "options": [
+      "shunt",
+      "cumulative-compound",
+      "differential compound",
+      "series"
+    ],
+    "answer": 3,
+    "explanation": "At no-load, the current of a series motor drops near zero, causing its field flux to collapse and forcing the speed to race dangerously high.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-030",
+    "question": "A series motor is best suited for driving",
+    "options": [
+      "lathes",
+      "cranes and hoists",
+      "shears and punches",
+      "machine tools"
+    ],
+    "answer": 1,
+    "explanation": "Cranes and hoists require high starting torque to lift heavy loads, making the series motor an ideal choice.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-031",
+    "question": "A 220 V shunt motor develops a torque of 54 N-m at armature current of 10 A. The torque produced when the armature current is 20 A, is",
+    "options": [
+      "54 N-m",
+      "81 N-m",
+      "108 N-m",
+      "None of the above"
+    ],
+    "answer": 2,
+    "explanation": "In a shunt motor, torque is directly proportional to armature current, so doubling the current from 10 A to 20 A doubles the torque to 108 N-m.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-032",
+    "question": "The d.c. series motor should never be switched on at no load because",
+    "options": [
+      "the field current is zero",
+      "The machine does not pick up",
+      "The speed becomes dangerously high",
+      "It will take too long to accelerate."
+    ],
+    "answer": 2,
+    "explanation": "With no load, the extremely small armature current produces a weak field flux, causing the motor speed to reach destructive levels.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-033",
+    "question": "A shunt d.c. motor works on a.c. mains",
+    "options": [
+      "unsatisfactorily",
+      "satisfactorily",
+      "not at all",
+      "none of the above"
+    ],
+    "answer": 0,
+    "explanation": "High inductance in the shunt field winding causes a large phase split and severe sparking at the brushes, leading to poor performance on AC.",
+    "image": null
+  },
+  {
+    "id": "EM-DCM-034",
+    "question": "A 200 V, 10 A motor could be rewound for 100 V, 20 A by using ......... as many turns per coil of wire, having ......... the cross-sectional area.",
+    "options": [
+      "twice, half",
+      "thrice, one third",
+      "half, twice",
+      "four times, one-fourth"
+    ],
+    "answer": 2,
+    "explanation": "Halving the design voltage requires half the number of turns per coil, while doubling the rated current demands twice the conductor cross-sectional area.",
     "image": null
   }
 ]
