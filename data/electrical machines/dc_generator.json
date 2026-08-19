@@ -1,0 +1,653 @@
+[
+    {
+        "id": "EM-DCG-001",
+        "question": "The basic requirement of a d.c. armature winding is that it must be",
+        "options": [
+            "a closed one",
+            "a lap winding",
+            "a wave winding",
+            "either (b) or (c)"
+        ],
+        "answer": 0,
+        "explanation": "A D.C. machine armature winding must form a continuous closed loop circuit to allow continuous current flow through the brushes. Lap and wave configurations are simply different geometric methods used to close this continuous path.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-002",
+        "question": "A wave winding must go at least........ around the armature before it closes back where it started.",
+        "options": [
+            "once",
+            "twice",
+            "thrice",
+            "four times"
+        ],
+        "answer": 1,
+        "explanation": "In a simplex wave winding, the series-connected path traces a wave pattern around the entire periphery of the armature core. It passes under all poles and completes exactly two stroke segments or loops around the armature before landing one slot ahead or behind its original starting position.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-003",
+        "question": "The d.c. armature winding in which coil sides are a pole pitch apart is called.....winding.",
+        "options": [
+            "multiplex",
+            "fractional-pitch",
+            "full-pitch",
+            "pole-pitch"
+        ],
+        "answer": 2,
+        "explanation": "A winding is designated as a full-pitch winding when its internal coil span matches the structural pole pitch perfectly. This spatial separation translates exactly into 180 electrical degrees between the two active sides of a single armature coil.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-004",
+        "question": "For making coil span equal to a pole pitch in the armature winding of a d.c. generator, the back pitch of the winding must equal the number of",
+        "options": [
+            "commutator bars per pole",
+            "winding elements",
+            "armature conductors per path",
+            "armature parallel paths"
+        ],
+        "answer": 0,
+        "explanation": "To configure a full-pitch design where the coil sides sit under identical relative regions of sequential field poles, the physical step width must align with a pole pitch. Expressed in terms of structural winding elements, this means the back pitch must equal the total number of commutator bars per pole.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-005",
+        "question": "The primary reason for making the coil span of a d.c. armature winding equal to a pole pitch is to",
+        "options": [
+            "obtain a coil span of 180° (electrical)",
+            "ensure the addition of e.m.fs. of consecutive turns",
+            "distribute the winding uniformly under different poles",
+            "obtain a full-pitch winding"
+        ],
+        "answer": 1,
+        "explanation": "When the coil span equals one pole pitch, the individual voltage drops across the two coil sides reach their maximum values at the same instant with opposite polarities. Due to the reverse series connection around the back pitch, these induced e.m.f. values add together arithmetically to maximize total coil voltage.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-006",
+        "question": "In a 4-pole, 35 slot d.c. armature, 180 electrical-degree coil span will be obtained when coils occupy slots.",
+        "options": [
+            "1 and 10",
+            "1 and 9",
+            "2 and 11",
+            "3 and 12"
+        ],
+        "answer": 1,
+        "explanation": "The nominal pole pitch measured in slots is 35 / 4 = 8.75 slots. Since fractional coil spans are rounded to the nearest integer for fractional slot arrangements, a pitch of 8 slots is chosen. This means a coil beginning in slot 1 will terminate in slot 1 + 8 = 9.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-007",
+        "question": "The armature of a d.c. generator has a 2-layer lap-winding housed in 72 slots with six conductors/slot. What is the minimum number of commutator bars required for the armature?",
+        "options": [
+            "72",
+            "432",
+            "216",
+            "36"
+        ],
+        "answer": 2,
+        "explanation": "The total number of conductors is 72 slots * 6 conductors/slot = 432 conductors. Since each coil has two sides, the number of coils is 432 / 2 = 216. In a standard machine, the number of commutator segments matches the total number of separate electrical coils, which is 216.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-008",
+        "question": "The sole purpose of a commutator in a d.c. Generator is to",
+        "options": [
+            "increase output voltage",
+            "reduce sparking at brushes",
+            "provide smoother output",
+            "convert the induced a.c. into d.c."
+        ],
+        "answer": 3,
+        "explanation": "Dynamic electromagnetic induction naturally generates an alternating voltage wave within the rotating armature conductors of a generator. The mechanical commutator works alongside stationary brushes to rectify this internal alternating current (a.c.) into a unidirectional current (d.c.) at the external terminals.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-009",
+        "question": "For a 4-pole, 2-layer, d.c., lap-winding with 20 slots and one conductor per layer, the number of commutator bars is",
+        "options": [
+            "80",
+            "20",
+            "40",
+            "160"
+        ],
+        "answer": 1,
+        "explanation": "Since there is 1 conductor per layer and 2 layers, there are 2 conductors per slot. In 20 slots, there are 20 * 2 = 40 total conductors, which forms 20 single-turn coils, requiring exactly 20 commutator bars.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-010",
+        "question": "A 4-pole, 12-slot lap-wound d.c. armature has two coil-sides/slot. Assuming single turn coils and progressive winding, the back pitch would be",
+        "options": [
+            "5",
+            "7",
+            "3",
+            "6"
+        ],
+        "answer": 1,
+        "explanation": "The total number of coil sides (or conductors) Z = 12 slots * 2 coil-sides/slot = 24. For a progressive lap winding, back pitch Y_B = (Z/P) + 1 = (24/4) + 1 = 7.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-011",
+        "question": "If in the case of a certain d.c. armature, the number of commutator segments is found either one less or more than the number of slots, the armature must be having a simplex........... winding.",
+        "options": [
+            "wave",
+            "lap",
+            "frog leg",
+            "multielement"
+        ],
+        "answer": 0,
+        "explanation": "In a simplex wave winding, the commutator pitch formula dictates that the number of commutator segments cannot strictly equal the number of slots or a simple multiple of poles, often leading to configurations where segments differ slightly from the slot count.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-012",
+        "question": "Lap winding is suitable for.......... current, ...... voltage d.c. generators.",
+        "options": [
+            "high, low",
+            "low, high",
+            "low, low",
+            "high, high"
+        ],
+        "answer": 0,
+        "explanation": "Lap winding provides a number of parallel paths equal to the number of poles (A = P). This distribution splits the total current across many parallel paths, making it ideal for high-current, low-voltage applications.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-013",
+        "question": "The series field of a short-shunt d.c. generator is excited by........... currents.",
+        "options": [
+            "shunt",
+            "armature",
+            "load",
+            "external"
+        ],
+        "answer": 2,
+        "explanation": "In a short-shunt compound generator, the shunt field winding is connected in parallel with only the armature. The series field winding is placed in series with the external load, meaning it carries the load current.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-014",
+        "question": "In a d.c. generator, the generated e.m.f. is directly proportional to the",
+        "options": [
+            "field current",
+            "pole flux",
+            "number of armature parallel paths",
+            "number of dummy coils"
+        ],
+        "answer": 1,
+        "explanation": "The electromotive force equation of a D.C. generator is E = (ΦZN / 60) * (P / A). This directly shows that the induced voltage E is proportional to the magnetic flux per pole Φ.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-015",
+        "question": "In a 12-pole triplex lap-wound d.c. armature, each conductor can carry a current of 100 A. The rated current of this armature is ampere.",
+        "options": [
+            "600",
+            "1200",
+            "2400",
+            "3600"
+        ],
+        "answer": 3,
+        "explanation": "For a triplex lap winding, the number of parallel paths is A = m * P = 3 * 12 = 36 paths. Given each parallel path conductor handles 100 A, the total rated current is 36 * 100 A = 3600 A.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-016",
+        "question": "The commercial efficiency of a shunt generator is maximum when its variable loss equals........... loss",
+        "options": [
+            "constant",
+            "stray",
+            "iron",
+            "friction and windage"
+        ],
+        "answer": 0,
+        "explanation": "Maximum efficiency in any electrical machine occurs at the specific load condition where the total variable losses (such as armature copper losses) equal the total constant losses.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-017",
+        "question": "In small d.c. machines, armature slots are sometimes not made axial but are skewed. Though skewing makes winding a little more difficult, yet it results in",
+        "options": [
+            "quieter operation",
+            "slight decrease in losses",
+            "saving of copper",
+            "both (a) and (b)"
+        ],
+        "answer": 3,
+        "explanation": "Skewing the armature slots reduces magnetic hum and prevents cogging, ensuring quieter mechanical operation. It also smoothens flux transitions under the pole tips, slightly lowering stray core losses.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-018",
+        "question": "The critical resistance of the d.c. generator is the resistance of",
+        "options": [
+            "armature",
+            "field",
+            "load",
+            "brushes"
+        ],
+        "answer": 1,
+        "explanation": "Critical resistance is the maximum value of the shunt field circuit resistance beyond which a self-excited D.C. generator fails to build up its voltage voltage because the field line cannot cross the magnetization curve.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-019",
+        "question": "In d.c. generators, armature reaction is produced actually by",
+        "options": [
+            "its field current",
+            "armature conductors",
+            "field pole winding",
+            "load current in armature"
+        ],
+        "answer": 3,
+        "explanation": "Armature reaction refers to the effect of the magnetic field produced by the armature current on the main magnetic field produced by the field poles. Therefore, it only occurs when there is a load current flowing through the armature conductors.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-020",
+        "question": "In a d.c. generator, the effect of armature reaction on the main pole flux is to",
+        "options": [
+            "reduce it",
+            "distort it",
+            "reverse it",
+            "both (a) and (b)"
+        ],
+        "answer": 3,
+        "explanation": "Armature reaction has two main effects on the main pole flux: a cross-magnetizing effect which distorts the main flux wave, and a demagnetizing effect which reduces the net total flux magnitude.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-021",
+        "question": "In a clockwise-rotating loaded d.c. generator, brushes have to be shifted",
+        "options": [
+            "clockwise",
+            "counterclockwise",
+            "either (a) or (b)",
+            "neither (a) nor (b)"
+        ],
+        "answer": 0,
+        "explanation": "Due to the cross-magnetizing effect of armature reaction, the Magnetic Neutral Axis (MNA) shifts in the direction of rotation for a generator. To ensure sparkless commutation, the brushes must be shifted forward in that same clockwise direction.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-022",
+        "question": "The primary reason for providing compensating windings in a d.c. generator is to",
+        "options": [
+            "compensate for decrease in main flux",
+            "neutralize armature mmf",
+            "neutralize cross-magnetising flux",
+            "maintain uniform flux distribution"
+        ],
+        "answer": 2,
+        "explanation": "Compensating windings are embedded directly in the pole faces and connected in series with the armature to create an equal and opposite magnetic field. This configuration specifically neutralizes the cross-magnetizing armature flux beneath the pole shoes.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-023",
+        "question": "The main function of interpoles is to minimize .......... between the brushes and the commutator when the d.c. machine is loaded.",
+        "options": [
+            "friction",
+            "sparking",
+            "current",
+            "wear and tear"
+        ],
+        "answer": 1,
+        "explanation": "Interpoles neutralize the cross-magnetizing armature MMF in the commutating zone and induce a commutating voltage that overcomes the self-induced reactance voltage in the short-circuited coil, minimizing sparking at the brushes.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-024",
+        "question": "In a 6-pole d.c. machine, 90 mechanical degrees correspond to .......... electrical degrees.",
+        "options": [
+            "30",
+            "180",
+            "45",
+            "270"
+        ],
+        "answer": 3,
+        "explanation": "The relationship between electrical and mechanical degrees is given by θ_electrical = (P / 2) * θ_mechanical. For a 6-pole machine, θ_electrical = (6 / 2) * 90° = 3 * 90° = 270°.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-025",
+        "question": "The most likely cause(s) of sparking at the brushes in a d.c. machine is/are",
+        "options": [
+            "open coil in the armature",
+            "defective interpoles",
+            "incorrect brush spring pressure",
+            "all of the above"
+        ],
+        "answer": 3,
+        "explanation": "Sparking at the brushes can be caused by electrical defects like an open armature coil, improper magnetic compensation from defective interpoles, or mechanical issues such as incorrect brush spring contact pressure.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-026",
+        "question": "In a 10-pole, lap-wound d.c. generator, the number of active armature conductors per pole is 50. The number of compensating conductors per pole required is",
+        "options": [
+            "5",
+            "50",
+            "500",
+            "10"
+        ],
+        "answer": 0,
+        "explanation": "The number of compensating winding conductors per pole is derived from the ratio of the pole arc to pole pitch multiplied by the armature conductors per parallel path under a pole. Following the standard textbook key design parameters for this machine structure, the value evaluates to 5.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-027",
+        "question": "The commutation process in a d.c. generator basically involves",
+        "options": [
+            "passage of current from moving armature to a stationary load",
+            "reversal of current in an armature coil as it crosses MNA",
+            "conversion of a.c. to d.c.",
+            "suppression of reactance voltage"
+        ],
+        "answer": 1,
+        "explanation": "Commutation is the critical process where the current direction in an armature coil is completely reversed during the brief interval it is short-circuited by a brush while passing through the Magnetic Neutral Axis (MNA).",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-028",
+        "question": "Point out the WRONG statement. In d.c. generators, commutation can be improved by",
+        "options": [
+            "using interpoles",
+            "using carbon brushes in place of Cu brushes",
+            "shifting brush axis in the direction of armature rotation",
+            "none of the above"
+        ],
+        "answer": 3,
+        "explanation": "All three statements represent valid engineering methods used to improve commutation. Interpoles induce a neutralizing voltage, carbon brushes introduce beneficial contact resistance, and shifting the brush axis compensates for the MNA displacement.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-029",
+        "question": "Each of the following statements regarding interpoles is true except",
+        "options": [
+            "they are small yoke-fixed poles spaced in between the main poles",
+            "they are connected in parallel with the armature so that they carry part of the armature current",
+            "their polarity, in the case of generators is the same as that of the main pole ahead",
+            "they automatically neutralize not only reactance voltage but cross-magnetisation as well"
+        ],
+        "answer": 1,
+        "explanation": "Interpoles must be connected in series with the armature winding, not in parallel. This ensures that their magnetic strength scales automatically and directly with any changes in the armature current to properly neutralize armature reaction.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-030",
+        "question": "Shunt generators are most suited for stable parallel operation because of their .......... voltage characteristics.",
+        "options": [
+            "identical",
+            "dropping",
+            "linear",
+            "rising"
+        ],
+        "answer": 1,
+        "explanation": "Shunt generators possess a naturally dropping terminal voltage characteristic as the external load current grows. This dropping property creates a stable self-regulating balance that prevents any single generator from hogging the collective load.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-031",
+        "question": "Two parallel shunt generators will divide the total load equally in proportion to their kilowatt output ratings only when they have the same",
+        "options": [
+            "rated voltage",
+            "voltage regulation",
+            "internal I_aR_a drops",
+            "both (a) and (b)"
+        ],
+        "answer": 3,
+        "explanation": "To achieve a proportional load division across all output ranges, parallel generators must share identical no-load terminal voltage baselines and matching percentage voltage regulation profiles.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-032",
+        "question": "The main function of an equalizer bar is to make the parallel operation of two over-compounded d.c. generators",
+        "options": [
+            "stable",
+            "possible",
+            "regular",
+            "smooth"
+        ],
+        "answer": 0,
+        "explanation": "Over-compounded generators feature a rising voltage characteristic that creates severe parallel instability. An equalizer bar links the series field circuits to stabilize operation by distributing circulating current imbalances equally.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-033",
+        "question": "The essential condition for stable parallel operation of two d.c. generators having similar characteristics is that they should have",
+        "options": [
+            "same kilowatt output ratings",
+            "dropping voltage characteristics",
+            "same percentage regulation",
+            "same no-load and full-load speed"
+        ],
+        "answer": 1,
+        "explanation": "A inherently drooping voltage profile is the core prerequisite for electrical stability in parallel networks. Any sudden surge in a single machine's current causes its terminal voltage to drop, automatically shedding excess load back to the alternate unit.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-034",
+        "question": "The main factor which leads to unstable parallel operation of flat-and over-compound d.c. generators is",
+        "options": [
+            "unequal number of turns in their series field windings",
+            "unequal series field resistances",
+            "their rising voltage characteristics",
+            "unequal speed regulation of their prime movers"
+        ],
+        "answer": 2,
+        "explanation": "The rising voltage properties of over-compounded systems cause terminal voltage to increase alongside output current. Without external equalizer correction, any minor current jump escalates into a runaway loop where one generator takes over the entire network.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-035",
+        "question": "The simplest way to shift load from one d.c. shunt generator running in parallel with another is to",
+        "options": [
+            "adjust their field rheostats",
+            "insert resistance in their armature circuits",
+            "adjust speeds of their prime movers",
+            "use equalizer connections"
+        ],
+        "answer": 0,
+        "explanation": "Tuning the field rheostat changes the internal excitation and shifts the open-circuit e.m.f. wave. Raising the field strength of a single unit shifts its dropping voltage curve upward, prompting it to take on a larger share of the common load.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-036",
+        "question": "Which one of the following types of generators does NOT need equalizers for satisfactory parallel operation ?",
+        "options": [
+            "series",
+            "over-compound",
+            "flat-compound",
+            "under-compound"
+        ],
+        "answer": 3,
+        "explanation": "Under-compound generators feature a drooping terminal voltage curve under load, similar to a standard shunt generator. This drooping characteristic provides natural system stability, completely eliminating the need for an equalizer bus.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-037",
+        "question": "The external characteristic of a shunt generator can be obtained directly from its ....... characteristic.",
+        "options": [
+            "internal",
+            "open-circuit",
+            "load-saturation",
+            "performance"
+        ],
+        "answer": 1,
+        "explanation": "According to the textbook key, the external characteristic can be derived directly from its open-circuit characteristic by accounting for internal voltage drops.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-038",
+        "question": "Load saturation characteristic of a d.c. generator gives relation between",
+        "options": [
+            "V and I_a",
+            "E and I_a",
+            "E_0 and I_f",
+            "V and I_f"
+        ],
+        "answer": 3,
+        "explanation": "The load saturation curve plots the relationship between the terminal voltage (V) and the field excitation current (I_f) under a constant specified load current condition.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-039",
+        "question": "The slight curvature at the lower end of the O.C.C. of a self-excited d.c. generator is due to",
+        "options": [
+            "residual pole flux",
+            "high armature speed",
+            "magnetic inertia",
+            "high field circuit resistance"
+        ],
+        "answer": 2,
+        "explanation": "The initial non-linear bend at the bottom of the open-circuit characteristic curve is primarily caused by magnetic inertia or residual magnetism in the iron core.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-040",
+        "question": "For the voltage built-up of a self-excited d.c. generator, which of the following is not an essential condition ?",
+        "options": [
+            "There must be some residual flux",
+            "Field winding mmf must aid the residual flux",
+            "Total field circuit resistance must be less than the critical value",
+            "Armature speed must be very high"
+        ],
+        "answer": 3,
+        "explanation": "While the machine must run at or above a critical speed to build voltage, it does not strictly require a 'very high' speed, making this statement the non-essential condition.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-041",
+        "question": "The voltage build-up process of a d.c. generator is",
+        "options": [
+            "difficult",
+            "delayed",
+            "cumulative",
+            "infinite"
+        ],
+        "answer": 2,
+        "explanation": "Voltage build-up is a cumulative process where residual flux induces a small e.m.f., which drives a small field current, increasing the flux and further building up the voltage until saturation is reached.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-042",
+        "question": "Which of the following d.c. generator cannot build up on open-circuit?",
+        "options": [
+            "shunt",
+            "series",
+            "short shunt",
+            "long shunt"
+        ],
+        "answer": 1,
+        "explanation": "A series generator's field winding is in series with the load. On an open circuit, the load current is zero, meaning no field excitation can be produced to build up the voltage.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-043",
+        "question": "If a self-excited d.c. generator after being installed, fails to build up on its first trial run, the first thing to do is to",
+        "options": [
+            "increase the field resistance",
+            "check armature insulation",
+            "reverse field connections",
+            "increase the speed of prime mover"
+        ],
+        "answer": 2,
+        "explanation": "Reversing the field connections corrects a situation where the initial field current produces an MMF that opposes and wipes out the residual magnetism instead of aiding it.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-044",
+        "question": "If residual magnetism of a shunt generator is destroyed accidentally, it may be restored by connecting its shunt field",
+        "options": [
+            "to earth",
+            "to an a.c. source",
+            "in reverse",
+            "to a d.c. source"
+        ],
+        "answer": 3,
+        "explanation": "Flashing the field by momentarily connecting the shunt field winding to an external direct current (d.c.) source re-magnetizes the iron poles and restores the essential residual flux.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-045",
+        "question": "The three factors which cause decrease in the terminal voltage of a shunt generator are",
+        "options": [
+            "Armature resistance",
+            "Armature leakages",
+            "Armature reaction",
+            "Reduction in field current",
+            "B, D, E"
+        ],
+        "answer": 3,
+        "explanation": "Terminal voltage drops under load due to the combined effects of the internal armature resistance voltage drop, the weakening effect of armature reaction, and the consequent reduction in field current.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-046",
+        "question": "If field resistance of a d.c. shunt generator is increased beyond its critical value, the generator",
+        "options": [
+            "output voltage will exceed its name-plate rating",
+            "will not build up",
+            "may burn out if loaded to its name-plate rating",
+            "power output may exceed its name-plate rating"
+        ],
+        "answer": 1,
+        "explanation": "When the field circuit resistance exceeds the critical field resistance line, the field current path cannot intersect the magnetization curve, causing the voltage build-up process to fail entirely.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-047",
+        "question": "An ideal d.c. generator is one that has ......... voltage regulation.",
+        "options": [
+            "low",
+            "zero",
+            "positive",
+            "negative"
+        ],
+        "answer": 1,
+        "explanation": "An ideal generator maintains a constant terminal voltage across all load levels from no-load to full-load, which corresponds to exactly zero percent voltage regulation.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-048",
+        "question": "The ......... generator has poorest voltage regulation.",
+        "options": [
+            "series",
+            "shunt",
+            "compound",
+            "high"
+        ],
+        "answer": 0,
+        "explanation": "A series generator experiences massive variations in terminal voltage from no-load (where voltage is near zero) to full-load, giving it the poorest voltage regulation profile among standard D.C. machines.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-049",
+        "question": "The voltage regulation of an overcompound d.c. generator is always .........",
+        "options": [
+            "positive",
+            "negative",
+            "zero",
+            "high"
+        ],
+        "answer": 1,
+        "explanation": "In an over-compounded generator, the full-load terminal voltage is designed to be higher than the no-load voltage, resulting in a negative percentage calculation for voltage regulation.",
+        "image": null
+    },
+    {
+        "id": "EM-DCG-050",
+        "question": "Most commercial compound d.c. generator are normally supplied by the manufacturers as over compound machines because",
+        "options": [
+            "they are ideally suited for transmission of d.c. energy to remotely-located loads",
+            "degree of compounding can be adjusted by using a divertor across series field",
+            "they are more cost effective than shunt generators",
+            "they have zero percent regulation"
+        ],
+        "answer": 1,
+        "explanation": "Providing machines as over-compounded allows users to adjust and fine-tune the compounding level to flat or under-compounded requirements by simply connecting a diverter resistor across the series field winding.",
+        "image": null
+    }
+]

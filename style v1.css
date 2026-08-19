@@ -29,9 +29,7 @@ body{
     display:none;
 }
 
-/* =====================================================
-   Dashboard
-   ===================================================== */
+/* Dashboard */
 
 #dashboard{
     max-width:900px;
@@ -62,7 +60,12 @@ body{
     border-radius:var(--radius);
     padding:18px;
     box-shadow:var(--shadow);
+    color:var(--muted);
+}
+
+.stats-card span{
     /* color:var(--muted); */
+    font-size:1.1rem;
 }
 
 .stats-card h2{
@@ -71,49 +74,7 @@ body{
     color:var(--primary);
 }
 
-/* =====================================================
-   Dashboard Stats
-   ===================================================== */
-
-.dashboard-stats{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    margin-bottom:16px;
-}
-
-.stat-card{
-    border:1px solid var(--border);
-    background:var(--surface);
-    border-radius:12px;
-    padding:10px;
-    text-align:center;
-}
-
-button.stat-card{
-    width:100%;
-    color:var(--text);
-    cursor:pointer;
-}
-
-.stat-number{
-    display:block;
-    margin-top: 6px;
-    font-size:2.0rem;
-    font-weight:700;
-    color:var(--primary);
-}
-
-.stat-label{
-    display:block;
-    margin-top:2px;
-    color:var(--muted);
-    font-size:1.0rem;
-}
-
-/* =====================================================
-   Topic Cards
-   ===================================================== */
+/* Topic Cards */
 
 #topicsContainer{
     display:flex;
@@ -168,9 +129,7 @@ button.stat-card{
     transform:scale(.98);
 }
 
-/* =====================================================
-   Subtopics
-   ===================================================== */
+/* Subtopics */
 
 .subtopics{
     display:grid;
@@ -191,9 +150,7 @@ button.stat-card{
     background:var(--surface-hover);
 }
 
-/* =====================================================
-   Practice Screen
-   ===================================================== */
+/* Practice Screen */
 
 #practiceScreen{
     max-width:900px;
@@ -210,22 +167,123 @@ button.stat-card{
     padding:14px 0 18px;
 }
 
-/* ---------- Practice Header ---------- */
+/* Questions */
+
+#questionContainer{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.question-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:18px;
+    box-shadow:var(--shadow);
+}
+
+.question-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.question-id{
+    color:var(--muted);
+    font-size:.85rem;
+}
+
+.question-text{
+    margin-bottom:18px;
+    font-size:1.05rem;
+}
+
+/* ---------- Answered Indicators ---------- */
+
+.question-card.answered-correct{
+    border-left:4px solid var(--success);
+}
+
+.question-card.answered-wrong{
+    border-left:4px solid var(--danger);
+}
+
+/* Options */
+
+.options{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.option{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:13px;
+    cursor:pointer;
+    transition:.15s;
+}
+
+.option:hover{
+    background:var(--surface-hover);
+}
+
+.option.correct{
+    background:rgba(34,197,94,.18);
+    border-color:var(--success);
+}
+
+.option.wrong{
+    background:rgba(239,68,68,.18);
+    border-color:var(--danger);
+}
+
+/* Explanation */
+
+details{
+    margin-top:18px;
+    border-top:1px solid var(--border);
+    padding-top:12px;
+}
+
+summary{
+    cursor:pointer;
+    color:var(--primary);
+    font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .hero h1{
+        font-size:1.7rem;
+    }
+
+    .subtopics{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+/* progress bar*/
 
 .practice-top{
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap:12px;
-    padding:6px 0;
 }
 
 .practice-top button{
     background:var(--surface);
     color:var(--text);
     border:1px solid var(--border);
-    border-radius:9px;
-    padding:7px 10px;
+    border-radius:12px;
+    padding:10px 14px;
     cursor:pointer;
 }
 
@@ -233,6 +291,97 @@ button.stat-card{
     display:flex;
     flex-direction:column;
     align-items:center;
+}
+
+.practice-title span{
+    color:var(--muted);
+    font-size:.85rem;
+}
+
+.progress-info{
+    margin-top:14px;
+    color:var(--muted);
+}
+
+.progress-bar{
+    margin-top:8px;
+    height:8px;
+    background:var(--surface);
+    border-radius:999px;
+    overflow:hidden;
+}
+
+#progressFill{
+    width:0%;
+    height:100%;
+    background:var(--primary);
+    transition:.2s;
+}
+
+.question-image{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:14px;
+}
+
+.question-card details p{
+    margin-top:10px;
+    color:var(--muted);
+}
+
+/* =====================================================
+   BUILD 006E
+   Compact Mobile Practice UI
+   ===================================================== */
+
+.dashboard-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-bottom:16px;
+}
+
+.stat-card{
+    border:1px solid var(--border);
+    background:var(--surface);
+    border-radius:12px;
+    padding:10px;
+    text-align:center;
+}
+
+button.stat-card{
+    color:var(--text);
+    width:100%;
+    cursor:pointer;
+}
+
+.stat-number{
+    display:block;
+    font-size:1.2rem;
+    font-weight:700;
+    color: var(--primary);
+}
+
+.stat-label{
+    display:block;
+    margin-top:2px;
+    color:var(--muted);
+    font-size:.75rem;
+}
+
+
+/* ---------- Practice Header ---------- */
+
+.practice-top{
+    padding:6px 0;
+}
+
+.practice-top button{
+    padding:7px 10px;
+    border-radius:9px;
+}
+
+.practice-title{
     line-height:1.1;
 }
 
@@ -241,9 +390,9 @@ button.stat-card{
 }
 
 .practice-title span{
-    color:var(--muted);
     font-size:.7rem;
 }
+
 
 /* ---------- Session Counters ---------- */
 
@@ -272,124 +421,37 @@ button.stat-card{
     font-size:.65rem;
 }
 
-.progress-info{
-    margin-top:14px;
-    color:var(--muted);
-}
-
 .progress-bar{
-    margin-top:4px;
     height:5px;
-    background:var(--surface);
-    border-radius:999px;
-    overflow:hidden;
+    margin-top:4px;
 }
 
-#progressFill{
-    width:0%;
-    height:100%;
-    background:var(--primary);
-    transition:.2s;
-}
 
-/* =====================================================
-   Questions
-   ===================================================== */
-
-#questionContainer{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
+/* ---------- Compact Question Card ---------- */
 
 .question-card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:14px;
     padding:12px;
-    box-shadow:var(--shadow);
     margin-bottom:10px;
+    border-radius:14px;
 }
 
 .question-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     margin-bottom:7px;
 }
 
 .question-id{
-    color:var(--muted);
     font-size:.7rem;
 }
 
 .question-text{
-    font-size:1.05rem;
     line-height:1.4;
     margin-bottom:9px;
 }
 
-/* ---------- Answered Indicators ---------- */
-
-.question-card.answered-correct{
-    border-left:4px solid var(--success);
-}
-
-.question-card.answered-wrong{
-    border-left:4px solid var(--danger);
-}
-
-/* ---------- Options ---------- */
-
-.options{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
-
 .option{
-    border:1px solid var(--border);
-    border-radius:9px;
     padding:9px 10px;
     margin-bottom:5px;
-    cursor:pointer;
-    transition:.15s;
-}
-
-.option:hover{
-    background:var(--surface-hover);
-}
-
-.option.correct{
-    background:rgba(34,197,94,.18);
-    border-color:var(--success);
-}
-
-.option.wrong{
-    background:rgba(239,68,68,.18);
-    border-color:var(--danger);
-}
-
-/* ---------- Question Image ---------- */
-
-.question-image{
-    width:100%;
-    border-radius:12px;
-    margin-bottom:14px;
-}
-
-/* ---------- Explanation ---------- */
-
-details{
-    margin-top:18px;
-    border-top:1px solid var(--border);
-    padding-top:12px;
-}
-
-summary{
-    cursor:pointer;
-    color:var(--primary);
-    font-weight:600;
+    border-radius:9px;
 }
 
 .question-card details{
@@ -401,14 +463,8 @@ summary{
     cursor:pointer;
 }
 
-.question-card details p{
-    margin-top:10px;
-    color:var(--muted);
-}
 
-/* =====================================================
-   Bookmark
-   ===================================================== */
+/* ---------- Bookmark ---------- */
 
 .bookmark{
     cursor:pointer;
@@ -418,16 +474,4 @@ summary{
 
 .bookmark.active{
     color:#ff4dfc;
-}
-
-/* =====================================================
-   Mobile
-   ===================================================== */
-
-@media(max-width:480px){
-
-    .hero h1{
-        font-size:1.7rem;
-    }
-
 }

@@ -30,10 +30,11 @@ const MCQ_CONFIG = {
             subtopics: [
                 { id: "TR", name: "Transformer", file: "transformer.json" },
                 { id: "DCG", name: "DC Generator", file: "dc_generator.json" },
+                { id: "ACG", name: "AC Generator / Alternator", file: "ac_generator_alternator.json" },
                 { id: "DCM", name: "DC Motor", file: "dc_motor.json" },
                 { id: "IM", name: "Induction Motor", file: "induction_motor.json" },
-                { id: "SM", name: "Synchronous Motor", file: "synchronous_motor.json" },
-                { id: "SG", name: "Synchronous Generator", file: "synchronous_generator.json" }
+                { id: "SM", name: "Synchronous Motor", file: "synchronous_motor.json" }
+                // { id: "SG", name: "Synchronous Generator", file: "synchronous_generator.json" }
             ]
         },
 

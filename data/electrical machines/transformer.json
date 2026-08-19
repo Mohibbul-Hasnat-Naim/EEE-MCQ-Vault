@@ -492,5 +492,213 @@
     "answer": 2,
     "explanation": "The shared load distributes inversely to individual percentage impedances, causing the lower impedance unit B to bear twice the load burden compared to A.",
     "image": null
+  },
+  {
+    "id": "EM-TR-039",
+    "question": "Which of the following connections is best suited for 3-phase, 4-wire service ?",
+    "options": [
+      "Δ-Δ",
+      "Y-Y",
+      "Δ-Y",
+      "Y-Δ"
+    ],
+    "answer": 2,
+    "explanation": "A delta-star (Δ-Y) connection provides a secondary neutral point, making it ideal for 3-phase, 4-wire systems. This allows the secondary side to concurrently handle both single-phase lighting loads and three-phase power loads.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-040",
+    "question": "In a three-phase Y-Y transformer connection, neutral is fundamental to the",
+    "options": [
+      "suppression of harmonics",
+      "passage of unbalanced currents due to unbalanced loads",
+      "provision of dual electric service",
+      "balancing of phase voltages with respect to line voltages"
+    ],
+    "answer": 0,
+    "explanation": "In a Y-Y connection without a neutral wire, third-harmonic currents cannot flow, which distorts the flux wave and produces a high oscillating neutral voltage. Providing a solid neutral connection suppresses these harmful triple-frequency harmonic components in the phase voltages.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-041",
+    "question": "As compared to Δ-Δ bank, the capacity of the V-V bank of transformers is... percent.",
+    "options": [
+      "57.7",
+      "66.7",
+      "50",
+      "86.6"
+    ],
+    "answer": 0,
+    "explanation": "An open-delta or V-V bank uses two transformers instead of three. Its total output capacity drops to 1 / √3 of the original delta-delta bank capacity, which mathematically evaluates to approximately 57.7%.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-042",
+    "question": "If three transformers in a Δ-Δ are delivering their rated load and one transformer is removed, then overload on each of the remaining transformers is......... percent.",
+    "options": [
+      "66.7",
+      "173.2",
+      "73.2",
+      "58"
+    ],
+    "answer": 2,
+    "explanation": "When one unit is removed, the remaining two transformers operate in an open-delta structure where each must carry the full line current. The ratio of line current to phase current increases by a factor of √3 (or 1.732), causing an overload of 73.2% on each unit.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-043",
+    "question": "When a V-V system is converted into a Δ-Δ system, increase in capacity of the system is .......... percent.",
+    "options": [
+      "86.6",
+      "66.7",
+      "73.2",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "Converting from V-V to Δ-Δ increases the total capacity from √3 * P to 3 * P, where P is the individual transformer rating. The fractional capacity increase is (3 - √3) / √3 = √3 - 1, which equals a 73.2% growth in system capacity.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-044",
+    "question": "For supplying a balanced 3-ϕ load of 40-kVA, rating of each transformer in V-V bank should be nearly ........ kVA.",
+    "options": [
+      "20",
+      "23",
+      "34.6",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "The total capacity of a V-V bank is equal to √3 times the single-transformer volt-ampere rating (Kv * √3). For a 40-kVA load requirement, each transformer must be rated at 40 / √3 ≈ 23.09 kVA.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-045",
+    "question": "When a closed Δ bank is converted into an open-Δ bank, each of the two remaining transformers supplies.......... percent of the original load.",
+    "options": [
+      "66.7",
+      "57.7",
+      "50",
+      "73.2"
+    ],
+    "answer": 1,
+    "explanation": "In a balanced closed-delta bank, each individual unit provides 1/3 (or 33.3%) of the aggregate system load. When reduced to an open-delta bank, the load configuration forces each remaining transformer to handle 1 / √3 of the initial full load, which corresponds to 57.7%.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-046",
+    "question": "If the load p.f. is 0.866, then the average p.f. of the V-V bank is",
+    "options": [
+      "0.886",
+      "0.75",
+      "0.51",
+      "0.65"
+    ],
+    "answer": 1,
+    "explanation": "In an open-delta setup, the two units operate at different power factors given by cos(30° - θ) and cos(30° + θ). For a load power factor of 0.866 (θ = 30°), the individual power factors are cos(0°) = 1 and cos(60°) = 0.5, yielding an average operating power factor of (1 + 0.5) / 2 = 0.75.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-047",
+    "question": "A T-T connection has higher ratio of utilization that a V-V connection only when",
+    "options": [
+      "identical transformers are used",
+      "load power factor is leading",
+      "load power factor is unity",
+      "non-identical transformers are used"
+    ],
+    "answer": 3,
+    "explanation": "A T-T connection can utilize a specialized teaser transformer with an 86.6% voltage tap to avoid wasting winding capacity. If non-identical units are strategically chosen for the teaser and main roles, it reaches a superior transformation utilization ratio compared to a standard V-V setup.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-048",
+    "question": "The biggest advantage of T-T connection over the V-V connection for 3-phase power transformation is that it provides",
+    "options": [
+      "a set of balanced voltages under load",
+      "a true 3-phase, 4-wire system",
+      "a higher ratio of utilization",
+      "more voltages"
+    ],
+    "answer": 1,
+    "explanation": "The T-T connection features a distinct neutral tap point on the teaser winding that remains balanced even under changing loading conditions. This specific structural characteristic makes it uniquely capable of establishing a true 3-phase, 4-wire system.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-049",
+    "question": "Of the following statements concerning parallel operation of transformers, the one which is not correct is",
+    "options": [
+      "transformers must have equal voltage ratings",
+      "transformers must have same ratio of transformation",
+      "transformers must be operated at the same frequency",
+      "transformers must have equal kVA ratings"
+    ],
+    "answer": 3,
+    "explanation": "Transformers with completely distinct kVA power capacities can successfully be operated in parallel, provided they match in voltage rating, frequency, polarity, and per-unit impedance. They will divide the total load proportionally according to their individual kVA ratings.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-050",
+    "question": "Statement: An auto-transformer is more efficient in transferring energy from primary to secondary circuit. Reason: Because it does so both inductively and conductively.",
+    "options": [
+      "statement is false, reason is correct and relevant",
+      "statement is correct, reason is correct but irrelevant",
+      "both statement and reason are correct and are connected to each other as cause and effect",
+      "both statement and reason are false"
+    ],
+    "answer": 2,
+    "explanation": "Unlike standard isolated multi-winding transformers, an auto-transformer shares a common continuous electrical winding path between its primary and secondary sides. Because power passes through the structure through both electromagnetic induction and direct electrical conduction, internal copper and core losses are lowered, maximizing total efficiency.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-051",
+    "question": "Out of the following given choices for poly phase transformer connections which one will you select for three-to-two phase conversion ?",
+    "options": [
+      "Scott",
+      "star/star",
+      "double Scott",
+      "star/double-delta"
+    ],
+    "answer": 0,
+    "explanation": "The Scott connection is a specialized transformer network composed of two separate single-phase units connected in a T-configuration. It is universally employed across electrical engineering applications to transform a balanced three-phase voltage system into an orthogonal two-phase system.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-052",
+    "question": "A T-T transformer cannot be paralleled with ........ transformer.",
+    "options": [
+      "V-V",
+      "Y-Δ",
+      "Y-Y",
+      "Δ-Δ"
+    ],
+    "answer": 1,
+    "explanation": "A T-T transformer configuration features a 0-degree structural phase displacement between its primary and secondary line voltages, matching the phase angles of Y-Y, Δ-Δ, and V-V transformer groups. It cannot operate in parallel with a Y-Δ configuration because that network introduces an incompatible 30-degree phase shift.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-053",
+    "question": "Instrument transformers are used on a.c. circuits for extending the range of",
+    "options": [
+      "ammeters",
+      "voltmeters",
+      "wattmeters",
+      "all of the above"
+    ],
+    "answer": 3,
+    "explanation": "Current transformers step down high alternating line currents for ammeters, while potential transformers reduce high line voltages safely for voltmeters. Wattmeters require inputs from both components simultaneously to safely measure high total active power.",
+    "image": null
+  },
+  {
+    "id": "EM-TR-054",
+    "question": "Before removing the ammeter from a current transformer, its secondary must be short-circuited in order to avoid",
+    "options": [
+      "excessive heating of the core",
+      "high secondary e.m.f.",
+      "increase in iron losses",
+      "all of the above"
+    ],
+    "answer": 3,
+    "explanation": "Opening the secondary winding removes the counter-demagnetizing magnetic field, forcing the full primary current to serve as a massive magnetizing current. This completely saturates the iron core, causing extreme iron losses, hazardous high core heating, and an inductive secondary voltage spike that can breach insulation.",
+    "image": null
   }
 ]

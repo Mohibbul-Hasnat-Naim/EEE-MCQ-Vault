@@ -168,25 +168,6 @@ document.addEventListener("click", async function (e) {
 
 // ===== Start Practice =====
 
-// async function startTopicPractice(topicId) {
-
-//     const topic = MCQ_CONFIG.topics.find(t => t.id === topicId);
-
-//     if (!topic) return;
-
-//     let questions = [];
-
-//     for (const sub of topic.subtopics) {
-
-//         const data = await loadQuestionFile(topic.folder, sub.file);
-//         questions.push(...data);
-
-//     }
-
-//     startSession(topic.name, "Practice All", questions);
-
-// }
-
 async function startTopicPractice(topicId){
 
     const topic = MCQ_CONFIG.topics.find(t => t.id === topicId);
@@ -247,37 +228,6 @@ function startSession(topicName, subtopicName, questions) {
 
 
 // ===== Header =====
-
-// function renderPracticeHeader(topic, subtopic) {
-
-//     const header = document.getElementById("practiceHeader");
-
-//     header.innerHTML = `
-//         <div class="practice-top">
-
-//             <button id="backDashboard">←</button>
-
-//             <div class="practice-title">
-//                 <strong>${topic}</strong>
-//                 <span>${subtopic}</span>
-//             </div>
-
-//             <button id="restartPractice">↻</button>
-
-//         </div>
-
-//         <div class="progress-info">
-
-//             <span id="progressText">0 / ${currentSession.length}</span>
-
-//         </div>
-
-//         <div class="progress-bar">
-//             <div id="progressFill"></div>
-//         </div>
-//     `;
-
-// }
 
 function renderPracticeHeader(topic, subtopic){
 
@@ -452,22 +402,6 @@ function toggleBookmark(id, element) {
 
 
 // ---------- Progress ----------
-
-// function updateProgress() {
-
-//     const answered = document.querySelectorAll(
-//         '.question-card[data-answered="true"]'
-//     ).length;
-
-//     const total = currentSession.length;
-
-//     document.getElementById("progressText").textContent =
-//         `${answered} / ${total}`;
-
-//     document.getElementById("progressFill").style.width =
-//         `${answered / total * 100}%`;
-
-// }
 
 function updateProgress(){
 
@@ -657,12 +591,12 @@ function addBookmarkDashboardCard(){
     bookmarkCard.id = "bookmarkPracticeCard";
 
     bookmarkCard.innerHTML = `
+        <span class="stat-label">
+            ★ Bookmarked Questions
+        </span>
+        
         <span class="stat-number" id="bookmarkCount">
             ${getBookmarkCount()}
-        </span>
-
-        <span class="stat-label">
-            ★ Bookmarked
         </span>
     `;
 
