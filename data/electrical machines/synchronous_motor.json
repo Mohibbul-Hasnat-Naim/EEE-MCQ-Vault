@@ -1,0 +1,314 @@
+[
+    {
+        "id": "EM-SM-001",
+        "question": "In a synchronous motor, damper winding is provided in order to",
+        "options": [
+            "stabilize rotor motion",
+            "suppress rotor oscillations",
+            "develop necessary starting torque",
+            "both (b) and (c)"
+        ],
+        "answer": 3,
+        "explanation": "Damper windings serve a dual purpose in synchronous motors: they provide the necessary starting torque since the motor is not self-starting, and they help suppress rotor oscillations (hunting) during operation.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-002",
+        "question": "In a synchronous motor, the magnitude of stator back e.m.f. I_b depends on",
+        "options": [
+            "speed of the motor",
+            "load on the motor",
+            "both the speed and rotor flux",
+            "d.c. excitation only"
+        ],
+        "answer": 3,
+        "explanation": "Because a synchronous motor always runs at a constant synchronous speed, the magnitude of the back e.m.f. depends solely on the rotor flux, which is controlled by the d.c. excitation current.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-003",
+        "question": "An electric motor in which both the rotor and stator fields rotate with the same speed is called a/an........motor.",
+        "options": [
+            "d.c.",
+            "charge",
+            "synchronous",
+            "universal"
+        ],
+        "answer": 2,
+        "explanation": "A synchronous motor is defined by the fact that its rotor magnetic field locks with the rotating stator magnetic field, causing both to rotate at the exact same synchronous speed.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-004",
+        "question": "While running, a synchronous motor is compelled to run at synchronous speed because of",
+        "options": [
+            "damper winding in its pole faces",
+            "magnetic locking between stator and rotor poles",
+            "induced e.m.f. in rotor field winding by stator flux",
+            "compulsion due to Lenz's law"
+        ],
+        "answer": 1,
+        "explanation": "Once a synchronous motor reaches synchronous speed, magnetic locking occurs between the opposite poles of the stator's rotating magnetic field and the rotor's d.c.-excited poles, forcing them to rotate together.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-005",
+        "question": "The direction of rotation of a synchronous motor can be reversed by reversing",
+        "options": [
+            "current to the field winding",
+            "supply phase sequence",
+            "polarity of rotor poles",
+            "none of the above"
+        ],
+        "answer": 1,
+        "explanation": "Reversing the supply phase sequence changes the rotational direction of the stator's magnetic field, which consequently reverses the direction of the locked rotor.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-006",
+        "question": "When running under no-load condition and with normal excitation, armature current I_a drawn by a synchronous motor",
+        "options": [
+            "leads the back e.m.f. E_b by a small angle",
+            "is large",
+            "lags the applied voltage V by a small angle",
+            "lags the resultant voltage E_R by 90°."
+        ],
+        "answer": 2,
+        "explanation": "Under no-load conditions with normal excitation, the armature current is minimal and lags the applied voltage V by a small angle to supply the power needed to overcome internal friction and windage losses.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-007",
+        "question": "The angle between the synchronously-rotating stator flux and rotor poles of a synchronous motor is called....... angle.",
+        "options": [
+            "synchronizing",
+            "torque",
+            "power factor",
+            "slip"
+        ],
+        "answer": 1,
+        "explanation": "The angular displacement between the center of the stator magnetic poles and the center of the rotor poles is known as the torque angle or load angle.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-008",
+        "question": "If load angle of a 4-pole synchronous motor is 8° (elect), its value in mechanical degrees is",
+        "options": [
+            "4",
+            "2",
+            "0.5",
+            "0.25"
+        ],
+        "answer": 0,
+        "explanation": "The relationship between electrical and mechanical degrees is given by the formula: Mechanical Degrees = Electrical Degrees / (P / 2). For a 4-pole motor, 8° electrical is equal to 8 / 2 = 4° mechanical.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-009",
+        "question": "The maximum value of torque angle α in a synchronous motor is.....degrees electrical.",
+        "options": [
+            "45",
+            "90",
+            "between 45 and 90",
+            "below 60"
+        ],
+        "answer": 1,
+        "explanation": "The torque developed by a synchronous motor is proportional to the sine of the torque angle (sin α). Therefore, the maximum or breakdown torque occurs when α equals 90° electrical.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-010",
+        "question": "A synchronous motor running with normal excitation adjusts to load increases essentially by increase in its",
+        "options": [
+            "power factor",
+            "torque angle",
+            "back e.m.f.",
+            "armature current."
+        ],
+        "answer": 3,
+        "explanation": "When the mechanical load increases, the rotor falls back slightly, increasing the torque angle. This causes a larger vector difference between the supply voltage and back e.m.f., which increases the armature current to meet the demand.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-011",
+        "question": "When load on a synchronous motor running with normal excitation is increased, armature current drawn by it increases because",
+        "options": [
+            "back e.m.f. E_b becomes less than applied voltage V",
+            "power factor is decreased",
+            "net resultant voltage E_R in armature is increased",
+            "motor speed is reduced"
+        ],
+        "answer": 2,
+        "explanation": "When load increases, the rotor falls back relative to the stator field, increasing the load angle. This increases the vector difference between V and E_b, leading to a larger net resultant voltage E_R that drives more armature current.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-012",
+        "question": "When load on a normally-excited synchronous motor is increased, its power factor tends to",
+        "options": [
+            "approach unity",
+            "become increasingly lagging",
+            "become increasingly leading",
+            "remain unchanged."
+        ],
+        "answer": 1,
+        "explanation": "For a normally excited synchronous motor, an increase in load causes the torque angle to widen, shifting the resultant voltage and forcing the armature current to lag further behind the applied voltage.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-013",
+        "question": "The effect of increasing load on a synchronous motor running with normal excitation is to",
+        "options": [
+            "increase both its I_a and p.f.",
+            "decrease I_a but increase p.f.",
+            "increase I_a but decrease p.f.",
+            "decrease both I_a and p.f."
+        ],
+        "answer": 2,
+        "explanation": "As the mechanical load increases on a normally-excited synchronous motor, the armature current I_a increases to supply the necessary power, while the power factor (p.f.) becomes increasingly lagging (decreases).",
+        "image": null
+    },
+    {
+        "id": "EM-SM-014",
+        "question": "Ignoring the effects of armature reaction, if excitation of a synchronous motor running with constant load is increased, its torque angle must necessarily",
+        "options": [
+            "decrease",
+            "increase",
+            "remain constant",
+            "become twice the no-load value."
+        ],
+        "answer": 0,
+        "explanation": "Increasing the excitation increases the back e.m.f. E_b. For a constant mechanical load, the pull between the stator and rotor poles becomes stronger, causing the rotor to shift forward and decrease the torque angle.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-015",
+        "question": "If the field of a synchronous motor is under-excited, the power factor will be",
+        "options": [
+            "lagging",
+            "leading",
+            "unity",
+            "more than unity"
+        ],
+        "answer": 0,
+        "explanation": "An under-excited synchronous motor cannot produce enough magnetic flux internally, so it draws reactive lagging current from the AC supply lines to sustain its field, resulting in a lagging power factor.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-016",
+        "question": "Ignoring the effects of armature reaction, if excitation of a synchronous motor running with constant load is decreased from its normal value, it leads to",
+        "options": [
+            "increase in I_a but decrease in E_b",
+            "increase in E_b but decrease in I_a",
+            "increase in both I_a and p.f. which is lagging",
+            "increase in both I_a and \u03c5"
+        ],
+        "answer": 3,
+        "explanation": "Reducing excitation decreases E_b, which forces the motor to operate at a lagging power factor with a larger phase angle \u03c5. To maintain constant power output at a lower power factor, the armature current I_a must increase.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-017",
+        "question": "A synchronous motor connected to infinite bus-bars has at constant full-load, 100% excitation and unity p.f. On changing the excitation only, the armature current will have",
+        "options": [
+            "leading p.f. with under-excitation",
+            "leading p.f. with over-excitation",
+            "lagging p.f. with over-excitation",
+            "no change of p.f."
+        ],
+        "answer": 1,
+        "explanation": "When a synchronous motor is over-excited, it operates with a leading power factor and supplies reactive power back to the grid, acting like a synchronous condenser.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-018",
+        "question": "The V-curves of a synchronous motor show relationship between",
+        "options": [
+            "excitation current and back e.m.f.",
+            "field current and p.f.",
+            "d.c. field current and a.c. armature current",
+            "armature current and supply voltage."
+        ],
+        "answer": 2,
+        "explanation": "The V-curve of a synchronous motor plots the AC armature current on the y-axis against the DC field current on the x-axis, showing how current varies from lagging to leading conditions.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-019",
+        "question": "When load on a synchronous motor is increased, its armature current is increased provided it is",
+        "options": [
+            "normally-excited",
+            "over-excited",
+            "under-excited",
+            "all of the above"
+        ],
+        "answer": 3,
+        "explanation": "Regardless of the excitation state (under, normal, or over-excitation), an increase in mechanical load always requires more real power from the electrical grid, forcing the armature current to increase.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-020",
+        "question": "If main field current of a salient-pole synchronous motor fed from an infinite bus and running at no-load is reduced to zero, it would",
+        "options": [
+            "come to a stop",
+            "continue running at synchronous speed",
+            "run at sub-synchronous speed",
+            "run at super-synchronous speed"
+        ],
+        "answer": 1,
+        "explanation": "A salient-pole machine has structural non-uniformity that creates reluctance torque. At no-load, this reluctance torque alone is sufficient to keep the rotor locked and running at synchronous speed even without field excitation.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-021",
+        "question": "In a synchronous machine when the rotor speed becomes more than the synchronous speed during hunting, the damping bars develop",
+        "options": [
+            "synchronous motor torque",
+            "d.c. motor torque",
+            "induction motor torque",
+            "induction generator torque"
+        ],
+        "answer": 3,
+        "explanation": "When hunting causes the rotor speed to exceed synchronous speed, a relative slip is introduced. The damper windings cut the stator flux and operate as an induction generator, creating a braking torque to slow the rotor down.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-022",
+        "question": "In a synchronous motor, the rotor Cu losses are met by",
+        "options": [
+            "motor input",
+            "armature input",
+            "supply lines",
+            "d.c. source"
+        ],
+        "answer": 3,
+        "explanation": "The rotor winding of a synchronous motor is supplied independently by a external direct current (DC) source, meaning all rotor copper losses are entirely sustained by this DC excitation supply.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-023",
+        "question": "A synchronous machine is called a doubly-excited machine because",
+        "options": [
+            "it can be overexcited",
+            "it has two sets of rotor poles",
+            "both its rotor and stator are excited",
+            "it needs twice the normal exciting current."
+        ],
+        "answer": 2,
+        "explanation": "A synchronous machine is considered doubly-excited because it requires two independent power sources: AC power supplied to the stator winding and DC power supplied to the rotor winding.",
+        "image": null
+    },
+    {
+        "id": "EM-SM-024",
+        "question": "Synchronous capacitor is",
+        "options": [
+            "an ordinary static capacitor bank",
+            "an over-excited synchronous motor driving mechanical load",
+            "an over-excited synchronous motor running without mechanical load",
+            "none of the above"
+        ],
+        "answer": 2,
+        "explanation": "A synchronous capacitor (or condenser) is an over-excited synchronous motor operated at zero mechanical load, used exclusively to draw leading current and improve power factor in power systems.",
+        "image": null
+    }
+]
