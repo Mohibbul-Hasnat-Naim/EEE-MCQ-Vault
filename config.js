@@ -7,21 +7,6 @@ const MCQ_CONFIG = {
     topics: [
 
         {
-            id: "ET",
-            name: "Electronics",
-            icon: "⚡",
-            folder: "electronics",
-
-            subtopics: [
-                { id: "BJT", name: "BJT", file: "bjt.json" },
-                { id: "DIO", name: "Diode & Semiconductor", file: "diode.json" },
-                { id: "FET", name: "FET", file: "fet.json" },
-                { id: "MOS", name: "MOSFET", file: "mosfet.json" },
-                { id: "OA", name: "Operational Amplifier", file: "opamp.json" }
-            ]
-        },
-
-        {
             id: "EM",
             name: "Electrical Machines",
             icon: "⚙️",
@@ -35,6 +20,21 @@ const MCQ_CONFIG = {
                 { id: "IM", name: "Induction Motor", file: "induction_motor.json" },
                 { id: "SM", name: "Synchronous Motor", file: "synchronous_motor.json" }
                 // { id: "SG", name: "Synchronous Generator", file: "synchronous_generator.json" }
+            ]
+        },
+        
+        {
+            id: "ET",
+            name: "Electronics",
+            icon: "⚡",
+            folder: "electronics",
+
+            subtopics: [
+                { id: "BJT", name: "BJT", file: "bjt.json" },
+                { id: "DIO", name: "Diode & Semiconductor", file: "diode.json" },
+                { id: "FET", name: "FET", file: "fet.json" },
+                { id: "MOS", name: "MOSFET", file: "mosfet.json" },
+                { id: "OA", name: "Operational Amplifier", file: "opamp.json" }
             ]
         },
 
